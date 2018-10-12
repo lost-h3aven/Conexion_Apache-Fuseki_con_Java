@@ -1,5 +1,5 @@
 En la presente carpeta se encuentra:
 
-- El archivo con extensión .owl para subir al servidor Fuseki.
+- El archivo con extensiÃ³n .owl para subir al servidor Fuseki.
 
--El proyecto con extensión .pprj para protégé (Framework para la construcción de modelos ontológicos), si se desea modificar.
+- El proyecto con extensiÃ³n .pprj para protÃ©gÃ© (Framework para la construcciÃ³n de modelos ontolÃ³gicos), si se desea modificar.
