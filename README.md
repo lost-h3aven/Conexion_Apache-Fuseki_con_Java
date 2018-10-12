@@ -1,6 +1,5 @@
 # Conexion_Apache-Fuseki_con_Java
-Código para conexión de Apache-Fuseki con Java, y algunas consultas para comprobar la conexión correcta.
-
+Código para conexión de Apache-Fuseki con Java, y lectura del XML desde el servidor.
 El presente repositorio cuenta con dos carpetas:
 - OWL: Con el modelo ontológico utilizado para el ejemplo del código.
 - Conexion_con_Fuseki: El proyecto en Java.
