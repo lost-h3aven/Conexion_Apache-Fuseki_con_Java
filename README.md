@@ -13,6 +13,7 @@ Para el correcto funcionamiento, los requisitos necesarios previos a la ejecuci√
 - Lanzar el servidor
   
   *La instrucci√≥n para lanzar el servidor desde la terminal es la siguiente:
+  
     java -Xmx1024M -jar fuseki-server.jar --update --loc=Data /myData
   
   *Se recomienda desde linux hacer un demonio para el lanzamiento de √©ste.
@@ -23,4 +24,5 @@ Para el correcto funcionamiento, los requisitos necesarios previos a la ejecuci√
 
 
 -->Las descargas correspondientes a Apache Jena y Apache Jena Fuseki pueden ser descargados desde su p√°gina oficial:
+
 --- https://jena.apache.org/download/index.cgi
