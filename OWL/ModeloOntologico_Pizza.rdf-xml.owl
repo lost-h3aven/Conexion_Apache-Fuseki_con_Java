@@ -1,0 +1,3350 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:xsp="http://www.owl-ontologies.com/2005/08/07/xsp.owl#"
+    xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+    xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+    xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl#"
+    xmlns:daml="http://www.daml.org/2001/03/daml+oil#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xml:base="http://www.co-ode.org/ontologies/pizza/2005/10/18/pizza.owl" > 
+  <rdf:Description rdf:nodeID="A0">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="#ParmesanTopping"/>
+    <owl:onProperty rdf:resource="#hasTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A1">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="#SpinachTopping"/>
+    <owl:onProperty rdf:resource="#hasTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#DeepPanBase">
+    <owl:disjointWith rdf:resource="#ThinAndCrispyBase"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="#PizzaBase"/>
+    <rdfs:label xml:lang="pt">BaseEspessa</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A2">
+    <owl:onProperty rdf:resource="#hasSpiciness"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="#Mild"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A3">
+    <owl:onProperty rdf:resource="#hasSpiciness"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="#Mild"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A4">
+    <rdf:first rdf:resource="#GoatsCheeseTopping"/>
+    <rdf:rest rdf:nodeID="A5"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A6">
+    <owl:someValuesFrom rdf:resource="#OliveTopping"/>
+    <owl:onProperty rdf:resource="#hasTopping"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A7">
+    <owl:someValuesFrom rdf:resource="#TomatoTopping"/>
+    <owl:onProperty rdf:resource="#hasTopping"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A8">
+    <owl:unionOf rdf:nodeID="A9"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#Capricciosa">
+    <owl:disjointWith rdf:resource="#LaReine"/>
+    <rdfs:subClassOf rdf:nodeID="A10"/>
+    <owl:disjointWith rdf:resource="#Giardiniera"/>
+    <rdfs:subClassOf rdf:nodeID="A11"/>
+    <owl:disjointWith rdf:resource="#Fiorentina"/>
+    <rdfs:subClassOf rdf:nodeID="A12"/>
+    <rdfs:subClassOf rdf:nodeID="A13"/>
+    <owl:disjointWith rdf:resource="#AmericanHot"/>
+    <owl:disjointWith rdf:resource="#American"/>
+    <rdfs:subClassOf rdf:nodeID="A14"/>
+    <owl:disjointWith rdf:resource="#FourSeasons"/>
+    <owl:disjointWith rdf:resource="#Margherita"/>
+    <owl:disjointWith rdf:resource="#QuattroFormaggi"/>
+    <owl:disjointWith rdf:resource="#Mushroom"/>
+    <rdfs:subClassOf rdf:nodeID="A15"/>
+    <owl:disjointWith rdf:resource="#FruttiDiMare"/>
+    <owl:disjointWith rdf:resource="#Rosa"/>
+    <owl:disjointWith rdf:resource="#PolloAdAstra"/>
+    <owl:disjointWith rdf:resource="#Caprina"/>
+    <owl:disjointWith rdf:resource="#Soho"/>
+    <owl:disjointWith rdf:resource="#UnclosedPizza"/>
+    <owl:disjointWith rdf:resource="#Cajun"/>
+    <owl:disjointWith rdf:resource="#PrinceCarlo"/>
+    <owl:disjointWith rdf:resource="#Napoletana"/>
+    <owl:disjointWith rdf:resource="#Siciliana"/>
+    <rdfs:subClassOf rdf:nodeID="A16"/>
+    <rdfs:subClassOf rdf:nodeID="A17"/>
+    <owl:disjointWith rdf:resource="#Parmense"/>
+    <owl:disjointWith rdf:resource="#Veneziana"/>
+    <rdfs:label xml:lang="pt">Capricciosa</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#NamedPizza"/>
+    <owl:disjointWith rdf:resource="#SloppyGiuseppe"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A14">
+    <owl:onProperty rdf:resource="#hasTopping"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="#MozzarellaTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A18">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:allValuesFrom rdf:nodeID="A19"/>
+    <owl:onProperty rdf:resource="#hasTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ChickenTopping">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="#MeatTopping"/>
+    <rdfs:subClassOf rdf:nodeID="A20"/>
+    <owl:disjointWith rdf:resource="#HotSpicedBeefTopping"/>
+    <owl:disjointWith rdf:resource="#HamTopping"/>
+    <owl:disjointWith rdf:resource="#PeperoniSausageTopping"/>
+    <rdfs:label xml:lang="pt">CoberturaDeFrango</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A21">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="A22"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#MeatTopping">
+    <rdfs:label xml:lang="pt">CoberturaDeCarne</rdfs:label>
+    <owl:disjointWith rdf:resource="#FruitTopping"/>
+    <owl:disjointWith rdf:resource="#VegetableTopping"/>
+    <owl:disjointWith rdf:resource="#SauceTopping"/>
+    <owl:disjointWith rdf:resource="#NutTopping"/>
+    <owl:disjointWith rdf:resource="#HerbSpiceTopping"/>
+    <owl:disjointWith rdf:resource="#CheeseTopping"/>
+    <owl:disjointWith rdf:resource="#FishTopping"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="#PizzaTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A23">
+    <rdf:rest rdf:nodeID="A24"/>
+    <rdf:first rdf:resource="#NutTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A25">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="#hasTopping"/>
+    <owl:someValuesFrom rdf:resource="#TomatoTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A26">
+    <owl:onProperty rdf:resource="#hasTopping"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="#MeatTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A27">
+    <rdf:first rdf:resource="#MozzarellaTopping"/>
+    <rdf:rest rdf:nodeID="A28"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#AnchoviesTopping">
+    <owl:disjointWith rdf:resource="#MixedSeafoodTopping"/>
+    <owl:disjointWith rdf:resource="#PrawnsTopping"/>
+    <rdfs:subClassOf rdf:resource="#FishTopping"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="pt">CoberturaDeAnchovies</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="#Cajun">
+    <owl:disjointWith rdf:resource="#Rosa"/>
+    <owl:disjointWith rdf:resource="#American"/>
+    <rdfs:subClassOf rdf:nodeID="A29"/>
+    <owl:disjointWith rdf:resource="#Margherita"/>
+    <owl:disjointWith rdf:resource="#FruttiDiMare"/>
+    <rdfs:subClassOf rdf:nodeID="A30"/>
+    <rdfs:subClassOf rdf:nodeID="A31"/>
+    <owl:disjointWith rdf:resource="#Siciliana"/>
+    <rdfs:label xml:lang="pt">Cajun</rdfs:label>
+    <owl:disjointWith rdf:resource="#Parmense"/>
+    <owl:disjointWith rdf:resource="#Mushroom"/>
+    <owl:disjointWith rdf:resource="#UnclosedPizza"/>
+    <rdfs:subClassOf rdf:nodeID="A32"/>
+    <owl:disjointWith rdf:resource="#LaReine"/>
+    <rdfs:subClassOf rdf:nodeID="A33"/>
+    <owl:disjointWith rdf:resource="#AmericanHot"/>
+    <owl:disjointWith rdf:resource="#PrinceCarlo"/>
+    <owl:disjointWith rdf:resource="#Fiorentina"/>
+    <owl:disjointWith rdf:resource="#SloppyGiuseppe"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:disjointWith rdf:resource="#PolloAdAstra"/>
+    <rdfs:subClassOf rdf:resource="#NamedPizza"/>
+    <owl:disjointWith rdf:resource="#Veneziana"/>
+    <owl:disjointWith rdf:resource="#QuattroFormaggi"/>
+    <owl:disjointWith rdf:resource="#Soho"/>
+    <owl:disjointWith rdf:resource="#Giardiniera"/>
+    <rdfs:subClassOf rdf:nodeID="A34"/>
+    <owl:disjointWith rdf:resource="#Capricciosa"/>
+    <owl:disjointWith rdf:resource="#FourSeasons"/>
+    <rdfs:subClassOf rdf:nodeID="A35"/>
+    <owl:disjointWith rdf:resource="#Napoletana"/>
+    <owl:disjointWith rdf:resource="#Caprina"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A36">
+    <rdf:first rdf:resource="#TomatoTopping"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A37">
+    <rdf:rest rdf:nodeID="A38"/>
+    <rdf:first rdf:resource="#MixedSeafoodTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#Parmense">
+    <owl:disjointWith rdf:resource="#Caprina"/>
+    <owl:disjointWith rdf:resource="#Veneziana"/>
+    <owl:disjointWith rdf:resource="#Cajun"/>
+    <owl:disjointWith rdf:resource="#QuattroFormaggi"/>
+    <owl:disjointWith rdf:resource="#FourSeasons"/>
+    <rdfs:subClassOf rdf:nodeID="A0"/>
+    <rdfs:subClassOf rdf:nodeID="A39"/>
+    <owl:disjointWith rdf:resource="#SloppyGiuseppe"/>
+    <rdfs:subClassOf rdf:nodeID="A40"/>
+    <owl:disjointWith rdf:resource="#FruttiDiMare"/>
+    <owl:disjointWith rdf:resource="#UnclosedPizza"/>
+    <owl:disjointWith rdf:resource="#Soho"/>
+    <owl:disjointWith rdf:resource="#LaReine"/>
+    <owl:disjointWith rdf:resource="#Mushroom"/>
+    <owl:disjointWith rdf:resource="#Fiorentina"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:disjointWith rdf:resource="#Rosa"/>
+    <owl:disjointWith rdf:resource="#Capricciosa"/>
+    <owl:disjointWith rdf:resource="#AmericanHot"/>
+    <owl:disjointWith rdf:resource="#American"/>
+    <owl:disjointWith rdf:resource="#Margherita"/>
+    <owl:disjointWith rdf:resource="#Napoletana"/>
+    <owl:disjointWith rdf:resource="#PrinceCarlo"/>
+    <rdfs:subClassOf rdf:nodeID="A41"/>
+    <rdfs:subClassOf rdf:nodeID="A42"/>
+    <owl:disjointWith rdf:resource="#PolloAdAstra"/>
+    <rdfs:subClassOf rdf:resource="#NamedPizza"/>
+    <owl:disjointWith rdf:resource="#Siciliana"/>
+    <owl:disjointWith rdf:resource="#Giardiniera"/>
+    <rdfs:label xml:lang="pt">Parmense</rdfs:label>
+    <rdfs:subClassOf rdf:nodeID="A43"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A44">
+    <owl:someValuesFrom rdf:resource="#ParmesanTopping"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="#hasTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A45">
+    <owl:someValuesFrom rdf:resource="#MozzarellaTopping"/>
+    <owl:onProperty rdf:resource="#hasTopping"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A46">
+    <owl:intersectionOf rdf:nodeID="A47"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A48">
+    <rdf:first rdf:resource="#MozzarellaTopping"/>
+    <rdf:rest rdf:nodeID="A49"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A50">
+    <owl:someValuesFrom rdf:resource="#MushroomTopping"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="#hasTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A51">
+    <rdf:first rdf:resource="#PizzaTopping"/>
+    <rdf:rest rdf:nodeID="A52"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A53">
+    <rdf:first rdf:resource="#ParmesanTopping"/>
+    <rdf:rest rdf:nodeID="A54"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FruttiDiMare">
+    <owl:disjointWith rdf:resource="#Soho"/>
+    <rdfs:subClassOf rdf:nodeID="A55"/>
+    <owl:disjointWith rdf:resource="#Veneziana"/>
+    <owl:disjointWith rdf:resource="#Rosa"/>
+    <owl:disjointWith rdf:resource="#Siciliana"/>
+    <rdfs:subClassOf rdf:nodeID="A56"/>
+    <rdfs:subClassOf rdf:nodeID="A57"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:disjointWith rdf:resource="#PolloAdAstra"/>
+    <rdfs:subClassOf rdf:resource="#NamedPizza"/>
+    <owl:disjointWith rdf:resource="#LaReine"/>
+    <owl:disjointWith rdf:resource="#Napoletana"/>
+    <rdfs:label xml:lang="pt">FrutosDoMar</rdfs:label>
+    <owl:disjointWith rdf:resource="#Caprina"/>
+    <owl:disjointWith rdf:resource="#AmericanHot"/>
+    <owl:disjointWith rdf:resource="#Mushroom"/>
+    <owl:disjointWith rdf:resource="#Capricciosa"/>
+    <owl:disjointWith rdf:resource="#American"/>
+    <owl:disjointWith rdf:resource="#Fiorentina"/>
+    <owl:disjointWith rdf:resource="#SloppyGiuseppe"/>
+    <owl:disjointWith rdf:resource="#Margherita"/>
+    <owl:disjointWith rdf:resource="#UnclosedPizza"/>
+    <owl:disjointWith rdf:resource="#FourSeasons"/>
+    <owl:disjointWith rdf:resource="#Giardiniera"/>
+    <owl:disjointWith rdf:resource="#Cajun"/>
+    <rdfs:subClassOf rdf:nodeID="A18"/>
+    <owl:disjointWith rdf:resource="#QuattroFormaggi"/>
+    <owl:disjointWith rdf:resource="#PrinceCarlo"/>
+    <owl:disjointWith rdf:resource="#Parmense"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A58">
+    <rdf:first rdf:resource="#LeekTopping"/>
+    <rdf:rest rdf:nodeID="A59"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A60">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="#TomatoTopping"/>
+    <owl:onProperty rdf:resource="#hasTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#Spiciness">
+    <rdfs:subClassOf rdf:resource="#ValuePartition"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:equivalentClass rdf:nodeID="A61"/>
+    <rdfs:comment xml:lang="en">A ValuePartition that describes only values from Hot, Medium or Mild. NB Subclasses can themselves be divided up into further partitions.</rdfs:comment>
+    <rdfs:label xml:lang="pt">Tempero</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A62">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="#TomatoTopping"/>
+    <owl:onProperty rdf:resource="#hasTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FruitTopping">
+    <owl:disjointWith rdf:resource="#VegetableTopping"/>
+    <owl:disjointWith rdf:resource="#MeatTopping"/>
+    <owl:disjointWith rdf:resource="#CheeseTopping"/>
+    <owl:disjointWith rdf:resource="#NutTopping"/>
+    <rdfs:subClassOf rdf:resource="#PizzaTopping"/>
+    <owl:disjointWith rdf:resource="#SauceTopping"/>
+    <owl:disjointWith rdf:resource="#HerbSpiceTopping"/>
+    <rdfs:label xml:lang="pt">CoberturaDeFrutas</rdfs:label>
+    <owl:disjointWith rdf:resource="#FishTopping"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A63">
+    <rdf:rest rdf:nodeID="A37"/>
+    <rdf:first rdf:resource="#GarlicTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A64">
+    <rdf:rest rdf:nodeID="A65"/>
+    <rdf:first rdf:resource="#VegetableTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A66">
+    <rdf:first rdf:resource="#CheeseTopping"/>
+    <rdf:rest rdf:nodeID="A67"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A68">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="#hasSpiciness"/>
+    <owl:someValuesFrom rdf:resource="#Mild"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#VegetarianPizzaEquivalent2">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment xml:lang="en">An alternative to VegetarianPizzaEquiv1 that does not require a definition of VegetarianTopping. Perhaps more difficult to maintain. Not equivalent to VegetarianPizza </rdfs:comment>
+    <owl:equivalentClass rdf:nodeID="A69"/>
+    <rdfs:label xml:lang="pt">PizzaVegetarianaEquivalente2</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A22">
+    <rdf:first rdf:resource="#HotGreenPepperTopping"/>
+    <rdf:rest rdf:nodeID="A70"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#isToppingOf">
+    <owl:inverseOf rdf:resource="#hasTopping"/>
+    <rdfs:subPropertyOf rdf:resource="#isIngredientOf"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="#PizzaTopping"/>
+    <rdfs:range rdf:resource="#Pizza"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A71">
+    <owl:onProperty rdf:resource="#hasTopping"/>
+    <owl:someValuesFrom rdf:resource="#OnionTopping"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#LeekTopping">
+    <owl:disjointWith rdf:resource="#PetitPoisTopping"/>
+    <owl:disjointWith rdf:resource="#AsparagusTopping"/>
+    <rdfs:label xml:lang="pt">CoberturaDeLeek</rdfs:label>
+    <owl:disjointWith rdf:resource="#CaperTopping"/>
+    <owl:disjointWith rdf:resource="#OliveTopping"/>
+    <rdfs:subClassOf rdf:nodeID="A72"/>
+    <rdfs:subClassOf rdf:resource="#VegetableTopping"/>
+    <owl:disjointWith rdf:resource="#ArtichokeTopping"/>
+    <owl:disjointWith rdf:resource="#GarlicTopping"/>
+    <owl:disjointWith rdf:resource="#OnionTopping"/>
+    <owl:disjointWith rdf:resource="#RocketTopping"/>
+    <owl:disjointWith rdf:resource="#MushroomTopping"/>
+    <owl:disjointWith rdf:resource="#SpinachTopping"/>
+    <owl:disjointWith rdf:resource="#PepperTopping"/>
+    <owl:disjointWith rdf:resource="#TomatoTopping"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A73">
+    <owl:intersectionOf rdf:nodeID="A74"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A75">
+    <rdf:first rdf:resource="#SultanaTopping"/>
+    <rdf:rest rdf:nodeID="A76"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A77">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="A78"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A17">
+    <owl:someValuesFrom rdf:resource="#HamTopping"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="#hasTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A79">
+    <owl:someValuesFrom rdf:resource="#SweetPepperTopping"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="#hasTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A80">
+    <owl:onProperty rdf:resource="#hasTopping"/>
+    <owl:allValuesFrom rdf:nodeID="A81"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A82">
+    <rdf:rest rdf:nodeID="A83"/>
+    <rdf:first rdf:resource="#PizzaTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#JalapenoPepperTopping">
+    <rdfs:subClassOf rdf:nodeID="A84"/>
+    <rdfs:subClassOf rdf:resource="#PepperTopping"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:disjointWith rdf:resource="#SweetPepperTopping"/>
+    <owl:disjointWith rdf:resource="#PeperonataTopping"/>
+    <owl:disjointWith rdf:resource="#GreenPepperTopping"/>
+    <rdfs:label xml:lang="pt">CoberturaDeJalapeno</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A85">
+    <rdf:first rdf:resource="#RocketTopping"/>
+    <rdf:rest rdf:nodeID="A86"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A87">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="#hasSpiciness"/>
+    <owl:someValuesFrom rdf:resource="#Mild"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A88">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="#FruitTopping"/>
+    <owl:onProperty rdf:resource="#hasTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A89">
+    <rdf:first rdf:resource="#TomatoTopping"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A90">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="#TomatoTopping"/>
+    <owl:onProperty rdf:resource="#hasTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A91">
+    <owl:onProperty rdf:resource="#hasTopping"/>
+    <owl:someValuesFrom rdf:resource="#GarlicTopping"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A92">
+    <rdf:first rdf:nodeID="A93"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A94">
+    <rdf:rest rdf:nodeID="A95"/>
+    <rdf:first rdf:resource="#OnionTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ArtichokeTopping">
+    <owl:disjointWith rdf:resource="#RocketTopping"/>
+    <owl:disjointWith rdf:resource="#OliveTopping"/>
+    <owl:disjointWith rdf:resource="#CaperTopping"/>
+    <rdfs:subClassOf rdf:resource="#VegetableTopping"/>
+    <owl:disjointWith rdf:resource="#OnionTopping"/>
+    <owl:disjointWith rdf:resource="#AsparagusTopping"/>
+    <rdfs:subClassOf rdf:nodeID="A96"/>
+    <rdfs:label xml:lang="pt">CoberturaDeArtichoke</rdfs:label>
+    <owl:disjointWith rdf:resource="#TomatoTopping"/>
+    <owl:disjointWith rdf:resource="#MushroomTopping"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:disjointWith rdf:resource="#PepperTopping"/>
+    <owl:disjointWith rdf:resource="#SpinachTopping"/>
+    <owl:disjointWith rdf:resource="#GarlicTopping"/>
+    <owl:disjointWith rdf:resource="#LeekTopping"/>
+    <owl:disjointWith rdf:resource="#PetitPoisTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A97">
+    <owl:onProperty rdf:resource="#hasSpiciness"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="#Mild"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A98">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="A99"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A39">
+    <owl:onProperty rdf:resource="#hasTopping"/>
+    <owl:someValuesFrom rdf:resource="#HamTopping"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#SundriedTomatoTopping">
+    <rdfs:label xml:lang="pt">CoberturaDeTomateRessecadoAoSol</rdfs:label>
+    <owl:disjointWith rdf:resource="#SlicedTomatoTopping"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="#TomatoTopping"/>
+    <rdfs:subClassOf rdf:nodeID="A100"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A101">
+    <owl:complementOf rdf:resource="#VegetarianPizza"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A102">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="#SultanaTopping"/>
+    <owl:onProperty rdf:resource="#hasTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A103">
+    <rdf:rest rdf:nodeID="A104"/>
+    <rdf:first rdf:resource="#MozzarellaTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A12">
+    <owl:onProperty rdf:resource="#hasTopping"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="#PeperonataTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FourSeasons">
+    <rdfs:subClassOf rdf:nodeID="A105"/>
+    <rdfs:subClassOf rdf:nodeID="A106"/>
+    <rdfs:subClassOf rdf:nodeID="A50"/>
+    <owl:disjointWith rdf:resource="#Caprina"/>
+    <owl:disjointWith rdf:resource="#Siciliana"/>
+    <owl:disjointWith rdf:resource="#Mushroom"/>
+    <owl:disjointWith rdf:resource="#LaReine"/>
+    <owl:disjointWith rdf:resource="#QuattroFormaggi"/>
+    <owl:disjointWith rdf:resource="#Giardiniera"/>
+    <owl:disjointWith rdf:resource="#American"/>
+    <rdfs:subClassOf rdf:nodeID="A107"/>
+    <rdfs:subClassOf rdf:nodeID="A108"/>
+    <owl:disjointWith rdf:resource="#PrinceCarlo"/>
+    <rdfs:subClassOf rdf:nodeID="A109"/>
+    <owl:disjointWith rdf:resource="#Veneziana"/>
+    <rdfs:subClassOf rdf:resource="#NamedPizza"/>
+    <owl:disjointWith rdf:resource="#Soho"/>
+    <rdfs:subClassOf rdf:nodeID="A110"/>
+    <owl:disjointWith rdf:resource="#PolloAdAstra"/>
+    <owl:disjointWith rdf:resource="#Rosa"/>
+    <owl:disjointWith rdf:resource="#SloppyGiuseppe"/>
+    <owl:disjointWith rdf:resource="#Parmense"/>
+    <owl:disjointWith rdf:resource="#FruttiDiMare"/>
+    <owl:disjointWith rdf:resource="#Napoletana"/>
+    <rdfs:subClassOf rdf:nodeID="A111"/>
+    <owl:disjointWith rdf:resource="#AmericanHot"/>
+    <owl:disjointWith rdf:resource="#UnclosedPizza"/>
+    <owl:disjointWith rdf:resource="#Margherita"/>
+    <owl:disjointWith rdf:resource="#Cajun"/>
+    <owl:disjointWith rdf:resource="#Fiorentina"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="pt">QuatroQueijos</rdfs:label>
+    <owl:disjointWith rdf:resource="#Capricciosa"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#Napoletana">
+    <owl:disjointWith rdf:resource="#PrinceCarlo"/>
+    <owl:disjointWith rdf:resource="#PolloAdAstra"/>
+    <owl:disjointWith rdf:resource="#Veneziana"/>
+    <rdfs:subClassOf rdf:nodeID="A112"/>
+    <owl:disjointWith rdf:resource="#QuattroFormaggi"/>
+    <owl:disjointWith rdf:resource="#FruttiDiMare"/>
+    <owl:disjointWith rdf:resource="#Soho"/>
+    <owl:disjointWith rdf:resource="#UnclosedPizza"/>
+    <owl:disjointWith rdf:resource="#Rosa"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="#NamedPizza"/>
+    <owl:disjointWith rdf:resource="#Capricciosa"/>
+    <owl:disjointWith rdf:resource="#Giardiniera"/>
+    <owl:disjointWith rdf:resource="#Fiorentina"/>
+    <owl:disjointWith rdf:resource="#American"/>
+    <owl:disjointWith rdf:resource="#Parmense"/>
+    <rdfs:subClassOf rdf:nodeID="A113"/>
+    <rdfs:subClassOf rdf:nodeID="A114"/>
+    <owl:disjointWith rdf:resource="#Caprina"/>
+    <owl:disjointWith rdf:resource="#LaReine"/>
+    <owl:disjointWith rdf:resource="#FourSeasons"/>
+    <owl:disjointWith rdf:resource="#Cajun"/>
+    <rdfs:subClassOf rdf:nodeID="A115"/>
+    <owl:disjointWith rdf:resource="#Mushroom"/>
+    <rdfs:label xml:lang="pt">Napoletana</rdfs:label>
+    <rdfs:subClassOf rdf:nodeID="A116"/>
+    <owl:disjointWith rdf:resource="#SloppyGiuseppe"/>
+    <rdfs:subClassOf rdf:nodeID="A60"/>
+    <owl:disjointWith rdf:resource="#AmericanHot"/>
+    <owl:disjointWith rdf:resource="#Siciliana"/>
+    <owl:disjointWith rdf:resource="#Margherita"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A117">
+    <owl:oneOf rdf:nodeID="A118"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A119">
+    <owl:someValuesFrom rdf:resource="#OliveTopping"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="#hasTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A120">
+    <rdf:first rdf:resource="#TomatoTopping"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A121">
+    <rdf:first rdf:resource="#TomatoTopping"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A122">
+    <rdf:first rdf:resource="#OnionTopping"/>
+    <rdf:rest rdf:nodeID="A123"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A124">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="A125"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A126">
+    <rdf:first rdf:nodeID="A127"/>
+    <rdf:rest rdf:nodeID="A128"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A129">
+    <rdf:first rdf:resource="#TomatoTopping"/>
+    <rdf:rest rdf:nodeID="A130"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A131">
+    <rdf:first rdf:resource="#HotSpicedBeefTopping"/>
+    <rdf:rest rdf:nodeID="A132"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A133">
+    <owl:someValuesFrom rdf:resource="#MozzarellaTopping"/>
+    <owl:onProperty rdf:resource="#hasTopping"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A40">
+    <owl:someValuesFrom rdf:resource="#TomatoTopping"/>
+    <owl:onProperty rdf:resource="#hasTopping"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A134">
+    <rdf:rest rdf:nodeID="A135"/>
+    <rdf:first rdf:resource="#TobascoPepperSauce"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A136">
+    <owl:onProperty rdf:resource="#hasTopping"/>
+    <owl:someValuesFrom rdf:resource="#MozzarellaTopping"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A137">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="#SundriedTomatoTopping"/>
+    <owl:onProperty rdf:resource="#hasTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A138">
+    <rdf:rest rdf:nodeID="A139"/>
+    <rdf:first rdf:resource="#France"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A140">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="#Italy"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A141">
+    <owl:someValuesFrom rdf:resource="#Mild"/>
+    <owl:onProperty rdf:resource="#hasSpiciness"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A56">
+    <owl:onProperty rdf:resource="#hasTopping"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="#TomatoTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A142">
+    <owl:onProperty rdf:resource="#hasSpiciness"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="#Mild"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#PeperoniSausageTopping_8">
+    <hasSpiciness rdf:resource="#Mild_9"/>
+    <isToppingOf rdf:resource="#CheeseyPizza_6"/>
+    <rdf:type rdf:resource="#PeperoniSausageTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A143">
+    <owl:onProperty rdf:resource="#hasTopping"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="#MozzarellaTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#hasBase">
+    <rdfs:domain rdf:resource="#Pizza"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:range rdf:resource="#PizzaBase"/>
+    <owl:inverseOf rdf:resource="#isBaseOf"/>
+    <rdfs:subPropertyOf rdf:resource="#hasIngredient"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A144">
+    <rdf:rest rdf:nodeID="A145"/>
+    <rdf:first rdf:resource="#Medium"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A100">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="#hasSpiciness"/>
+    <owl:someValuesFrom rdf:resource="#Mild"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A33">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="#PrawnsTopping"/>
+    <owl:onProperty rdf:resource="#hasTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A146">
+    <owl:onProperty rdf:resource="#hasTopping"/>
+    <owl:allValuesFrom rdf:nodeID="A147"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A148">
+    <rdf:first rdf:resource="#OliveTopping"/>
+    <rdf:rest rdf:nodeID="A149"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A150">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="#hasTopping"/>
+    <owl:someValuesFrom rdf:resource="#HotGreenPepperTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A118">
+    <rdf:first rdf:resource="#America"/>
+    <rdf:rest rdf:nodeID="A151"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A152">
+    <rdf:rest rdf:nodeID="A138"/>
+    <rdf:first rdf:resource="#England"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A153">
+    <rdf:rest rdf:nodeID="A134"/>
+    <rdf:first rdf:resource="#PrawnsTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#SauceTopping">
+    <rdfs:subClassOf rdf:resource="#PizzaTopping"/>
+    <owl:disjointWith rdf:resource="#VegetableTopping"/>
+    <owl:disjointWith rdf:resource="#CheeseTopping"/>
+    <owl:disjointWith rdf:resource="#MeatTopping"/>
+    <owl:disjointWith rdf:resource="#NutTopping"/>
+    <owl:disjointWith rdf:resource="#HerbSpiceTopping"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:disjointWith rdf:resource="#FishTopping"/>
+    <owl:disjointWith rdf:resource="#FruitTopping"/>
+    <rdfs:label xml:lang="pt">CoberturaEmMolho</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ThinAndCrispyBase_7">
+    <rdf:type rdf:resource="#ThinAndCrispyBase"/>
+    <isBaseOf rdf:resource="#CheeseyPizza_6"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#Margherita">
+    <owl:disjointWith rdf:resource="#Soho"/>
+    <owl:disjointWith rdf:resource="#AmericanHot"/>
+    <owl:disjointWith rdf:resource="#FourSeasons"/>
+    <rdfs:subClassOf rdf:nodeID="A154"/>
+    <rdfs:subClassOf rdf:nodeID="A143"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:disjointWith rdf:resource="#Cajun"/>
+    <owl:disjointWith rdf:resource="#Veneziana"/>
+    <owl:disjointWith rdf:resource="#Napoletana"/>
+    <owl:disjointWith rdf:resource="#Rosa"/>
+    <owl:disjointWith rdf:resource="#Fiorentina"/>
+    <owl:disjointWith rdf:resource="#Parmense"/>
+    <rdfs:label xml:lang="pt">Margherita</rdfs:label>
+    <owl:disjointWith rdf:resource="#PolloAdAstra"/>
+    <owl:disjointWith rdf:resource="#Giardiniera"/>
+    <owl:disjointWith rdf:resource="#Caprina"/>
+    <owl:disjointWith rdf:resource="#UnclosedPizza"/>
+    <owl:disjointWith rdf:resource="#LaReine"/>
+    <owl:disjointWith rdf:resource="#QuattroFormaggi"/>
+    <owl:disjointWith rdf:resource="#SloppyGiuseppe"/>
+    <owl:disjointWith rdf:resource="#Mushroom"/>
+    <owl:disjointWith rdf:resource="#Capricciosa"/>
+    <rdfs:subClassOf rdf:nodeID="A155"/>
+    <owl:disjointWith rdf:resource="#FruttiDiMare"/>
+    <owl:disjointWith rdf:resource="#Siciliana"/>
+    <owl:disjointWith rdf:resource="#PrinceCarlo"/>
+    <owl:disjointWith rdf:resource="#American"/>
+    <rdfs:subClassOf rdf:resource="#NamedPizza"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#CheeseyPizza_6">
+    <rdf:type rdf:resource="#CheeseyPizza"/>
+    <hasBase rdf:resource="#ThinAndCrispyBase_7"/>
+    <hasTopping rdf:resource="#PeperoniSausageTopping_8"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A156">
+    <owl:onProperty rdf:resource="#hasTopping"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="#RosemaryTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#Veneziana">
+    <owl:disjointWith rdf:resource="#Fiorentina"/>
+    <rdfs:subClassOf rdf:nodeID="A157"/>
+    <rdfs:label xml:lang="pt">Veneziana</rdfs:label>
+    <rdfs:subClassOf rdf:nodeID="A158"/>
+    <rdfs:subClassOf rdf:nodeID="A159"/>
+    <rdfs:subClassOf rdf:resource="#NamedPizza"/>
+    <owl:disjointWith rdf:resource="#Soho"/>
+    <owl:disjointWith rdf:resource="#LaReine"/>
+    <owl:disjointWith rdf:resource="#American"/>
+    <rdfs:subClassOf rdf:nodeID="A160"/>
+    <rdfs:subClassOf rdf:nodeID="A80"/>
+    <owl:disjointWith rdf:resource="#SloppyGiuseppe"/>
+    <rdfs:subClassOf rdf:nodeID="A161"/>
+    <rdfs:subClassOf rdf:nodeID="A102"/>
+    <owl:disjointWith rdf:resource="#Cajun"/>
+    <owl:disjointWith rdf:resource="#Caprina"/>
+    <owl:disjointWith rdf:resource="#FruttiDiMare"/>
+    <owl:disjointWith rdf:resource="#Mushroom"/>
+    <owl:disjointWith rdf:resource="#Napoletana"/>
+    <owl:disjointWith rdf:resource="#PrinceCarlo"/>
+    <owl:disjointWith rdf:resource="#Parmense"/>
+    <owl:disjointWith rdf:resource="#AmericanHot"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:disjointWith rdf:resource="#FourSeasons"/>
+    <owl:disjointWith rdf:resource="#Capricciosa"/>
+    <owl:disjointWith rdf:resource="#UnclosedPizza"/>
+    <owl:disjointWith rdf:resource="#PolloAdAstra"/>
+    <owl:disjointWith rdf:resource="#Margherita"/>
+    <owl:disjointWith rdf:resource="#Siciliana"/>
+    <owl:disjointWith rdf:resource="#QuattroFormaggi"/>
+    <owl:disjointWith rdf:resource="#Giardiniera"/>
+    <rdfs:subClassOf rdf:nodeID="A136"/>
+    <owl:disjointWith rdf:resource="#Rosa"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A162">
+    <owl:someValuesFrom rdf:resource="#Mild"/>
+    <owl:onProperty rdf:resource="#hasSpiciness"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A163">
+    <rdf:first rdf:resource="#GreenPepperTopping"/>
+    <rdf:rest rdf:nodeID="A131"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A164">
+    <owl:someValuesFrom rdf:resource="#Mild"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="#hasSpiciness"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A165">
+    <rdf:first rdf:resource="#PeperoniSausageTopping"/>
+    <rdf:rest rdf:nodeID="A166"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A81">
+    <owl:unionOf rdf:nodeID="A167"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A168">
+    <rdf:first rdf:resource="#TomatoTopping"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A169">
+    <rdf:first rdf:resource="#HamTopping"/>
+    <rdf:rest rdf:nodeID="A170"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A171">
+    <owl:onProperty rdf:resource="#hasTopping"/>
+    <owl:someValuesFrom rdf:resource="#OliveTopping"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#hasCountryOfOrigin">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A172">
+    <owl:onProperty rdf:resource="#hasTopping"/>
+    <owl:someValuesFrom rdf:resource="#HamTopping"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A49">
+    <rdf:first rdf:resource="#OliveTopping"/>
+    <rdf:rest rdf:nodeID="A173"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#CajunSpiceTopping">
+    <owl:disjointWith rdf:resource="#RosemaryTopping"/>
+    <rdfs:label xml:lang="pt">CoberturaDeCajun</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#HerbSpiceTopping"/>
+    <rdfs:subClassOf rdf:nodeID="A174"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A175">
+    <rdf:first rdf:nodeID="A176"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A177">
+    <rdf:first rdf:resource="#Germany"/>
+    <rdf:rest rdf:nodeID="A140"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#Pizza">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:disjointWith rdf:resource="#IceCream"/>
+    <owl:disjointWith rdf:resource="#PizzaTopping"/>
+    <owl:disjointWith rdf:resource="#PizzaBase"/>
+    <rdfs:subClassOf rdf:nodeID="A178"/>
+    <rdfs:subClassOf rdf:resource="#DomainConcept"/>
+    <rdfs:label xml:lang="en">Pizza</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="#PrinceCarlo">
+    <owl:disjointWith rdf:resource="#FourSeasons"/>
+    <owl:disjointWith rdf:resource="#Caprina"/>
+    <owl:disjointWith rdf:resource="#Napoletana"/>
+    <rdfs:subClassOf rdf:nodeID="A25"/>
+    <owl:disjointWith rdf:resource="#Margherita"/>
+    <owl:disjointWith rdf:resource="#AmericanHot"/>
+    <owl:disjointWith rdf:resource="#LaReine"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:disjointWith rdf:resource="#Mushroom"/>
+    <rdfs:subClassOf rdf:resource="#NamedPizza"/>
+    <owl:disjointWith rdf:resource="#Giardiniera"/>
+    <owl:disjointWith rdf:resource="#Capricciosa"/>
+    <rdfs:subClassOf rdf:nodeID="A179"/>
+    <rdfs:subClassOf rdf:nodeID="A156"/>
+    <owl:disjointWith rdf:resource="#Veneziana"/>
+    <owl:disjointWith rdf:resource="#PolloAdAstra"/>
+    <rdfs:subClassOf rdf:nodeID="A180"/>
+    <owl:disjointWith rdf:resource="#Rosa"/>
+    <rdfs:subClassOf rdf:nodeID="A181"/>
+    <owl:disjointWith rdf:resource="#SloppyGiuseppe"/>
+    <owl:disjointWith rdf:resource="#Cajun"/>
+    <owl:disjointWith rdf:resource="#Siciliana"/>
+    <owl:disjointWith rdf:resource="#American"/>
+    <owl:disjointWith rdf:resource="#Soho"/>
+    <rdfs:label xml:lang="pt">CoberturaPrinceCarlo</rdfs:label>
+    <owl:disjointWith rdf:resource="#Fiorentina"/>
+    <owl:disjointWith rdf:resource="#Parmense"/>
+    <rdfs:subClassOf rdf:nodeID="A182"/>
+    <owl:disjointWith rdf:resource="#UnclosedPizza"/>
+    <owl:disjointWith rdf:resource="#FruttiDiMare"/>
+    <owl:disjointWith rdf:resource="#QuattroFormaggi"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A183">
+    <owl:onProperty rdf:resource="#hasSpiciness"/>
+    <owl:someValuesFrom rdf:resource="#Mild"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A29">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="#PeperonataTopping"/>
+    <owl:onProperty rdf:resource="#hasTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A184">
+    <rdf:first rdf:nodeID="A185"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A186">
+    <owl:intersectionOf rdf:nodeID="A187"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A188">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="A189"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A190">
+    <owl:onProperty rdf:resource="#hasTopping"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="#MozzarellaTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A159">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="#hasTopping"/>
+    <owl:someValuesFrom rdf:resource="#TomatoTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A154">
+    <owl:someValuesFrom rdf:resource="#TomatoTopping"/>
+    <owl:onProperty rdf:resource="#hasTopping"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A191">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="#hasTopping"/>
+    <owl:someValuesFrom rdf:resource="#TomatoTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A55">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="#MixedSeafoodTopping"/>
+    <owl:onProperty rdf:resource="#hasTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A192">
+    <owl:intersectionOf rdf:nodeID="A193"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A194">
+    <rdf:first rdf:resource="#MozzarellaTopping"/>
+    <rdf:rest rdf:nodeID="A195"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A95">
+    <rdf:rest rdf:nodeID="A75"/>
+    <rdf:first rdf:resource="#PineKernels"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A196">
+    <rdf:first rdf:resource="#GarlicTopping"/>
+    <rdf:rest rdf:nodeID="A197"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A145">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="#Mild"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A198">
+    <rdf:first rdf:resource="#TomatoTopping"/>
+    <rdf:rest rdf:nodeID="A199"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A200">
+    <owl:unionOf rdf:nodeID="A201"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#France">
+    <rdf:type rdf:resource="#Country"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A202">
+    <owl:someValuesFrom rdf:resource="#MushroomTopping"/>
+    <owl:onProperty rdf:resource="#hasTopping"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A203">
+    <owl:onProperty rdf:resource="#hasTopping"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="#HotSpicedBeefTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A83">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:nodeID="A188"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A204">
+    <owl:onProperty rdf:resource="#hasTopping"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="#TomatoTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A205">
+    <rdf:first rdf:resource="#MozzarellaTopping"/>
+    <rdf:rest rdf:nodeID="A206"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A207">
+    <owl:onProperty rdf:resource="#hasTopping"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="#PeperonataTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#PeperoniSausageTopping">
+    <owl:disjointWith rdf:resource="#HamTopping"/>
+    <owl:disjointWith rdf:resource="#HotSpicedBeefTopping"/>
+    <owl:disjointWith rdf:resource="#ChickenTopping"/>
+    <rdfs:label xml:lang="pt">CoberturaDeCalabreza</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#MeatTopping"/>
+    <rdfs:subClassOf rdf:nodeID="A208"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#PeperonataTopping">
+    <rdfs:label xml:lang="pt">CoberturaPeperonata</rdfs:label>
+    <owl:disjointWith rdf:resource="#GreenPepperTopping"/>
+    <owl:disjointWith rdf:resource="#SweetPepperTopping"/>
+    <owl:disjointWith rdf:resource="#JalapenoPepperTopping"/>
+    <rdfs:subClassOf rdf:nodeID="A209"/>
+    <rdfs:subClassOf rdf:resource="#PepperTopping"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A176">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="#hasTopping"/>
+    <owl:someValuesFrom rdf:nodeID="A73"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#SpicyTopping">
+    <rdfs:label xml:lang="pt">CoberturaTemperada</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:equivalentClass rdf:nodeID="A210"/>
+    <rdfs:comment xml:lang="en">Any pizza topping that has spiciness Hot</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A9">
+    <rdf:first rdf:resource="#AnchoviesTopping"/>
+    <rdf:rest rdf:nodeID="A211"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ParmesanTopping">
+    <owl:disjointWith rdf:resource="#FourCheesesTopping"/>
+    <owl:disjointWith rdf:resource="#MozzarellaTopping"/>
+    <owl:disjointWith rdf:resource="#GorgonzolaTopping"/>
+    <owl:disjointWith rdf:resource="#GoatsCheeseTopping"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="#CheeseTopping"/>
+    <rdfs:subClassOf rdf:nodeID="A97"/>
+    <rdfs:label xml:lang="pt">CoberturaDeParmesao</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A212">
+    <owl:someValuesFrom rdf:resource="#Mild"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="#hasSpiciness"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#hasIngredient">
+    <owl:inverseOf rdf:resource="#isIngredientOf"/>
+    <rdfs:comment xml:lang="en">NB Transitive - the ingredients of ingredients are ingredients of the whole</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A213">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="#TomatoTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A214">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="#Pizza"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A215">
+    <rdf:rest rdf:nodeID="A216"/>
+    <rdf:first rdf:resource="#ArtichokeTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A217">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="#MozzarellaTopping"/>
+    <owl:onProperty rdf:resource="#hasTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A218">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="A219"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A181">
+    <owl:onProperty rdf:resource="#hasTopping"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="#MozzarellaTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A220">
+    <rdf:first rdf:resource="#DomainConcept"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#SloppyGiuseppe">
+    <owl:disjointWith rdf:resource="#Rosa"/>
+    <owl:disjointWith rdf:resource="#Napoletana"/>
+    <owl:disjointWith rdf:resource="#Veneziana"/>
+    <owl:disjointWith rdf:resource="#Parmense"/>
+    <owl:disjointWith rdf:resource="#Giardiniera"/>
+    <rdfs:subClassOf rdf:nodeID="A203"/>
+    <owl:disjointWith rdf:resource="#AmericanHot"/>
+    <rdfs:subClassOf rdf:resource="#NamedPizza"/>
+    <owl:disjointWith rdf:resource="#Fiorentina"/>
+    <owl:disjointWith rdf:resource="#FourSeasons"/>
+    <rdfs:subClassOf rdf:nodeID="A62"/>
+    <owl:disjointWith rdf:resource="#Mushroom"/>
+    <owl:disjointWith rdf:resource="#Cajun"/>
+    <owl:disjointWith rdf:resource="#Caprina"/>
+    <owl:disjointWith rdf:resource="#FruttiDiMare"/>
+    <rdfs:subClassOf rdf:nodeID="A146"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:disjointWith rdf:resource="#Capricciosa"/>
+    <owl:disjointWith rdf:resource="#Margherita"/>
+    <owl:disjointWith rdf:resource="#LaReine"/>
+    <rdfs:subClassOf rdf:nodeID="A221"/>
+    <owl:disjointWith rdf:resource="#UnclosedPizza"/>
+    <owl:disjointWith rdf:resource="#Soho"/>
+    <owl:disjointWith rdf:resource="#Siciliana"/>
+    <rdfs:subClassOf rdf:nodeID="A222"/>
+    <owl:disjointWith rdf:resource="#QuattroFormaggi"/>
+    <owl:disjointWith rdf:resource="#American"/>
+    <owl:disjointWith rdf:resource="#PrinceCarlo"/>
+    <owl:disjointWith rdf:resource="#PolloAdAstra"/>
+    <rdfs:subClassOf rdf:nodeID="A71"/>
+    <rdfs:label xml:lang="pt">SloppyGiuseppe</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A223">
+    <rdf:first rdf:resource="#FruitTopping"/>
+    <rdf:rest rdf:nodeID="A224"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A225">
+    <rdf:first rdf:resource="#TomatoTopping"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A226">
+    <rdf:first rdf:nodeID="A101"/>
+    <rdf:rest rdf:nodeID="A227"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A228">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="#hasTopping"/>
+    <owl:someValuesFrom rdf:resource="#ArtichokeTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#CheeseyPizza">
+    <rdfs:comment xml:lang="en">Any pizza that has at least 1 cheese topping.</rdfs:comment>
+    <rdfs:label xml:lang="pt">PizzaComQueijo</rdfs:label>
+    <owl:equivalentClass rdf:nodeID="A229"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A35">
+    <owl:someValuesFrom rdf:resource="#OnionTopping"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="#hasTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A230">
+    <owl:allValuesFrom rdf:nodeID="A231"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="#hasTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A232">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:allValuesFrom rdf:nodeID="A233"/>
+    <owl:onProperty rdf:resource="#hasTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#SweetPepperTopping">
+    <rdfs:label xml:lang="pt">CoberturaDePimentaoDoce</rdfs:label>
+    <owl:disjointWith rdf:resource="#PeperonataTopping"/>
+    <owl:disjointWith rdf:resource="#JalapenoPepperTopping"/>
+    <owl:disjointWith rdf:resource="#GreenPepperTopping"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:nodeID="A87"/>
+    <rdfs:subClassOf rdf:resource="#PepperTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A234">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="#hasTopping"/>
+    <owl:someValuesFrom rdf:resource="#RedOnionTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A10">
+    <owl:onProperty rdf:resource="#hasTopping"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:allValuesFrom rdf:nodeID="A235"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#PineKernels">
+    <rdfs:label xml:lang="pt">CoberturaPineKernels</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#NutTopping"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A219">
+    <rdf:first rdf:resource="#FruitTopping"/>
+    <rdf:rest rdf:nodeID="A236"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A237">
+    <owl:someValuesFrom rdf:resource="#MozzarellaTopping"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="#hasTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#VegetarianPizzaEquivalent1">
+    <owl:equivalentClass rdf:nodeID="A238"/>
+    <rdfs:comment xml:lang="en">Any pizza that only has vegetarian toppings or no toppings is a VegetarianPizzaEquiv1. Should be inferred to be equivalent to VegetarianPizzaEquiv2.  Not equivalent to VegetarianPizza because PizzaTopping is not covering</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="pt">PizzaVegetarianaEquivalente1</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A72">
+    <owl:onProperty rdf:resource="#hasSpiciness"/>
+    <owl:someValuesFrom rdf:resource="#Mild"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A239">
+    <rdf:first rdf:resource="#OliveTopping"/>
+    <rdf:rest rdf:nodeID="A240"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A241">
+    <rdf:rest rdf:nodeID="A196"/>
+    <rdf:first rdf:resource="#SpinachTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A113">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="#OliveTopping"/>
+    <owl:onProperty rdf:resource="#hasTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A242">
+    <owl:allValuesFrom rdf:nodeID="A243"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="#hasTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A158">
+    <owl:someValuesFrom rdf:resource="#OnionTopping"/>
+    <owl:onProperty rdf:resource="#hasTopping"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A28">
+    <rdf:rest rdf:nodeID="A244"/>
+    <rdf:first rdf:resource="#PeperoniSausageTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FishTopping">
+    <owl:disjointWith rdf:resource="#HerbSpiceTopping"/>
+    <owl:disjointWith rdf:resource="#FruitTopping"/>
+    <owl:disjointWith rdf:resource="#SauceTopping"/>
+    <owl:disjointWith rdf:resource="#VegetableTopping"/>
+    <owl:disjointWith rdf:resource="#CheeseTopping"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="pt">CoberturaDePeixe</rdfs:label>
+    <owl:disjointWith rdf:resource="#MeatTopping"/>
+    <rdfs:subClassOf rdf:resource="#PizzaTopping"/>
+    <owl:disjointWith rdf:resource="#NutTopping"/>
+    <rdfs:subClassOf rdf:nodeID="A245"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A246">
+    <rdf:rest rdf:nodeID="A36"/>
+    <rdf:first rdf:resource="#SlicedTomatoTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#TomatoTopping">
+    <rdfs:label xml:lang="pt">CoberturaDeTomate</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:disjointWith rdf:resource="#MushroomTopping"/>
+    <owl:disjointWith rdf:resource="#OnionTopping"/>
+    <owl:disjointWith rdf:resource="#CaperTopping"/>
+    <owl:disjointWith rdf:resource="#PetitPoisTopping"/>
+    <owl:disjointWith rdf:resource="#LeekTopping"/>
+    <owl:disjointWith rdf:resource="#SpinachTopping"/>
+    <owl:disjointWith rdf:resource="#OliveTopping"/>
+    <owl:disjointWith rdf:resource="#RocketTopping"/>
+    <owl:disjointWith rdf:resource="#AsparagusTopping"/>
+    <owl:disjointWith rdf:resource="#PepperTopping"/>
+    <owl:disjointWith rdf:resource="#GarlicTopping"/>
+    <rdfs:subClassOf rdf:nodeID="A162"/>
+    <owl:disjointWith rdf:resource="#ArtichokeTopping"/>
+    <rdfs:subClassOf rdf:resource="#VegetableTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A247">
+    <owl:onProperty rdf:resource="#hasTopping"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="#MozzarellaTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A248">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="#Mild"/>
+    <owl:onProperty rdf:resource="#hasSpiciness"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A222">
+    <owl:onProperty rdf:resource="#hasTopping"/>
+    <owl:someValuesFrom rdf:resource="#MozzarellaTopping"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A67">
+    <rdf:first rdf:resource="#HerbSpiceTopping"/>
+    <rdf:rest rdf:nodeID="A223"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A249">
+    <rdf:first rdf:resource="#GorgonzolaTopping"/>
+    <rdf:rest rdf:nodeID="A250"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A86">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="#TomatoTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A161">
+    <owl:onProperty rdf:resource="#hasTopping"/>
+    <owl:someValuesFrom rdf:resource="#PineKernels"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A251">
+    <owl:intersectionOf rdf:nodeID="A226"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#AmericanHot">
+    <owl:disjointWith rdf:resource="#SloppyGiuseppe"/>
+    <rdfs:label xml:lang="pt">AmericanaPicante</rdfs:label>
+    <owl:disjointWith rdf:resource="#Margherita"/>
+    <owl:disjointWith rdf:resource="#Veneziana"/>
+    <rdfs:subClassOf rdf:nodeID="A252"/>
+    <owl:disjointWith rdf:resource="#Siciliana"/>
+    <owl:disjointWith rdf:resource="#FruttiDiMare"/>
+    <owl:disjointWith rdf:resource="#Soho"/>
+    <owl:disjointWith rdf:resource="#Mushroom"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:nodeID="A150"/>
+    <rdfs:subClassOf rdf:nodeID="A253"/>
+    <owl:disjointWith rdf:resource="#Napoletana"/>
+    <owl:disjointWith rdf:resource="#Parmense"/>
+    <owl:disjointWith rdf:resource="#PrinceCarlo"/>
+    <owl:disjointWith rdf:resource="#American"/>
+    <rdfs:subClassOf rdf:nodeID="A254"/>
+    <owl:disjointWith rdf:resource="#QuattroFormaggi"/>
+    <owl:disjointWith rdf:resource="#PolloAdAstra"/>
+    <owl:disjointWith rdf:resource="#UnclosedPizza"/>
+    <rdfs:subClassOf rdf:resource="#NamedPizza"/>
+    <owl:disjointWith rdf:resource="#LaReine"/>
+    <rdfs:subClassOf rdf:nodeID="A255"/>
+    <owl:disjointWith rdf:resource="#Caprina"/>
+    <rdfs:subClassOf rdf:nodeID="A256"/>
+    <owl:disjointWith rdf:resource="#Capricciosa"/>
+    <owl:disjointWith rdf:resource="#FourSeasons"/>
+    <owl:disjointWith rdf:resource="#Cajun"/>
+    <owl:disjointWith rdf:resource="#Rosa"/>
+    <owl:disjointWith rdf:resource="#Fiorentina"/>
+    <owl:disjointWith rdf:resource="#Giardiniera"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A257">
+    <owl:onProperty rdf:resource="#hasTopping"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:allValuesFrom rdf:nodeID="A77"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A258">
+    <rdf:rest rdf:nodeID="A103"/>
+    <rdf:first rdf:resource="#GarlicTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A259">
+    <rdf:rest rdf:nodeID="A177"/>
+    <rdf:first rdf:resource="#France"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A78">
+    <rdf:first rdf:resource="#AnchoviesTopping"/>
+    <rdf:rest rdf:nodeID="A215"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ValuePartition">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A ValuePartition is a pattern that describes a restricted set of classes from which a property can be associated. The parent class is used in restrictions, and the covering axiom means that only members of the subclasses may be used as values. The possible subclasses cannot be extended without updating the ValuePartition class.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="pt">ValorDaParticao</rdfs:label>
+    <owl:disjointWith rdf:resource="#DomainConcept"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A260">
+    <owl:hasValue rdf:resource="#Italy"/>
+    <owl:onProperty rdf:resource="#hasCountryOfOrigin"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A261">
+    <rdf:rest rdf:nodeID="A262"/>
+    <rdf:first rdf:resource="#SundriedTomatoTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A263">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:intersectionOf rdf:nodeID="A264"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A265">
+    <rdf:first rdf:nodeID="A266"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A197">
+    <rdf:first rdf:resource="#OliveTopping"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A267">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="#TomatoTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A268">
+    <owl:intersectionOf rdf:nodeID="A269"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A229">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:intersectionOf rdf:nodeID="A126"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A270">
+    <rdf:first rdf:resource="#AnchoviesTopping"/>
+    <rdf:rest rdf:nodeID="A239"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A160">
+    <owl:onProperty rdf:resource="#hasTopping"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="#CaperTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A271">
+    <owl:someValuesFrom rdf:resource="#SlicedTomatoTopping"/>
+    <owl:onProperty rdf:resource="#hasTopping"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A272">
+    <owl:someValuesFrom rdf:resource="#MozzarellaTopping"/>
+    <owl:onProperty rdf:resource="#hasTopping"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A166">
+    <rdf:first rdf:resource="#TomatoTopping"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#Caprina">
+    <rdfs:subClassOf rdf:nodeID="A273"/>
+    <rdfs:label xml:lang="pt">Caprina</rdfs:label>
+    <owl:disjointWith rdf:resource="#Fiorentina"/>
+    <owl:disjointWith rdf:resource="#Mushroom"/>
+    <rdfs:subClassOf rdf:nodeID="A274"/>
+    <owl:disjointWith rdf:resource="#SloppyGiuseppe"/>
+    <rdfs:subClassOf rdf:resource="#NamedPizza"/>
+    <rdfs:subClassOf rdf:nodeID="A137"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:disjointWith rdf:resource="#LaReine"/>
+    <owl:disjointWith rdf:resource="#Siciliana"/>
+    <owl:disjointWith rdf:resource="#Capricciosa"/>
+    <owl:disjointWith rdf:resource="#Veneziana"/>
+    <owl:disjointWith rdf:resource="#Giardiniera"/>
+    <owl:disjointWith rdf:resource="#Soho"/>
+    <owl:disjointWith rdf:resource="#PrinceCarlo"/>
+    <owl:disjointWith rdf:resource="#QuattroFormaggi"/>
+    <rdfs:subClassOf rdf:nodeID="A133"/>
+    <owl:disjointWith rdf:resource="#Parmense"/>
+    <owl:disjointWith rdf:resource="#Margherita"/>
+    <owl:disjointWith rdf:resource="#Napoletana"/>
+    <owl:disjointWith rdf:resource="#American"/>
+    <owl:disjointWith rdf:resource="#PolloAdAstra"/>
+    <owl:disjointWith rdf:resource="#AmericanHot"/>
+    <owl:disjointWith rdf:resource="#Rosa"/>
+    <owl:disjointWith rdf:resource="#FourSeasons"/>
+    <owl:disjointWith rdf:resource="#UnclosedPizza"/>
+    <owl:disjointWith rdf:resource="#FruttiDiMare"/>
+    <owl:disjointWith rdf:resource="#Cajun"/>
+    <rdfs:subClassOf rdf:nodeID="A275"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A61">
+    <owl:unionOf rdf:nodeID="A276"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A277">
+    <owl:unionOf rdf:nodeID="A4"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#PepperTopping">
+    <owl:disjointWith rdf:resource="#AsparagusTopping"/>
+    <owl:disjointWith rdf:resource="#OnionTopping"/>
+    <rdfs:subClassOf rdf:resource="#VegetableTopping"/>
+    <owl:disjointWith rdf:resource="#CaperTopping"/>
+    <rdfs:label xml:lang="pt">CoberturaDePimentao</rdfs:label>
+    <owl:disjointWith rdf:resource="#GarlicTopping"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:disjointWith rdf:resource="#RocketTopping"/>
+    <owl:disjointWith rdf:resource="#OliveTopping"/>
+    <owl:disjointWith rdf:resource="#ArtichokeTopping"/>
+    <owl:disjointWith rdf:resource="#LeekTopping"/>
+    <owl:disjointWith rdf:resource="#MushroomTopping"/>
+    <owl:disjointWith rdf:resource="#SpinachTopping"/>
+    <owl:disjointWith rdf:resource="#PetitPoisTopping"/>
+    <owl:disjointWith rdf:resource="#TomatoTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A182">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:allValuesFrom rdf:nodeID="A278"/>
+    <owl:onProperty rdf:resource="#hasTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#Siciliana">
+    <rdfs:subClassOf rdf:nodeID="A91"/>
+    <owl:disjointWith rdf:resource="#Caprina"/>
+    <rdfs:subClassOf rdf:nodeID="A257"/>
+    <rdfs:subClassOf rdf:nodeID="A228"/>
+    <rdfs:subClassOf rdf:nodeID="A279"/>
+    <owl:disjointWith rdf:resource="#Mushroom"/>
+    <owl:disjointWith rdf:resource="#Giardiniera"/>
+    <owl:disjointWith rdf:resource="#Fiorentina"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:disjointWith rdf:resource="#UnclosedPizza"/>
+    <rdfs:subClassOf rdf:nodeID="A217"/>
+    <rdfs:subClassOf rdf:nodeID="A172"/>
+    <owl:disjointWith rdf:resource="#Capricciosa"/>
+    <owl:disjointWith rdf:resource="#Cajun"/>
+    <owl:disjointWith rdf:resource="#Parmense"/>
+    <owl:disjointWith rdf:resource="#Napoletana"/>
+    <owl:disjointWith rdf:resource="#SloppyGiuseppe"/>
+    <rdfs:subClassOf rdf:resource="#NamedPizza"/>
+    <owl:disjointWith rdf:resource="#Soho"/>
+    <owl:disjointWith rdf:resource="#FourSeasons"/>
+    <rdfs:label xml:lang="pt">Siciliana</rdfs:label>
+    <owl:disjointWith rdf:resource="#American"/>
+    <owl:disjointWith rdf:resource="#FruttiDiMare"/>
+    <owl:disjointWith rdf:resource="#Rosa"/>
+    <owl:disjointWith rdf:resource="#Veneziana"/>
+    <rdfs:subClassOf rdf:nodeID="A119"/>
+    <owl:disjointWith rdf:resource="#QuattroFormaggi"/>
+    <owl:disjointWith rdf:resource="#PrinceCarlo"/>
+    <rdfs:subClassOf rdf:nodeID="A90"/>
+    <owl:disjointWith rdf:resource="#Margherita"/>
+    <owl:disjointWith rdf:resource="#LaReine"/>
+    <owl:disjointWith rdf:resource="#PolloAdAstra"/>
+    <owl:disjointWith rdf:resource="#AmericanHot"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A236">
+    <rdf:first rdf:resource="#HerbSpiceTopping"/>
+    <rdf:rest rdf:nodeID="A23"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A280">
+    <rdf:rest rdf:nodeID="A265"/>
+    <rdf:first rdf:resource="#Pizza"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#England">
+    <rdf:type rdf:resource="#Country"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#InterestingPizza">
+    <owl:equivalentClass rdf:nodeID="A46"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment xml:lang="en">Any pizza that has at least 3 toppings. Note that this is a cardinality constraint on the hasTopping property and NOT a qualified cardinality constraint (QCR). A QCR would specify from which class the members in this relationship must be. eg has at least 3 toppings from PizzaTopping. This is currently not supported in OWL.</rdfs:comment>
+    <rdfs:label xml:lang="pt">PizzaInteressante</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="#RealItalianPizza">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:nodeID="A281"/>
+    <owl:equivalentClass rdf:nodeID="A282"/>
+    <rdfs:comment xml:lang="en">This defined class has conditions that are part of the definition: ie any Pizza that has the country of origin, Italy is a RealItalianPizza. It also has conditions that merely describe the members - that all RealItalianPizzas must only have ThinAndCrispy bases.</rdfs:comment>
+    <rdfs:label xml:lang="pt">PizzaItalianaReal</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="#SpicyPizza">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="pt">PizzaTemperada</rdfs:label>
+    <rdfs:comment xml:lang="en">Any pizza that has a spicy topping is a SpicyPizza</rdfs:comment>
+    <owl:equivalentClass rdf:nodeID="A268"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A5">
+    <rdf:rest rdf:nodeID="A261"/>
+    <rdf:first rdf:resource="#MozzarellaTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A283">
+    <rdf:first rdf:resource="#AnchoviesTopping"/>
+    <rdf:rest rdf:nodeID="A284"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A285">
+    <owl:onProperty rdf:resource="#hasTopping"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:allValuesFrom rdf:nodeID="A124"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A206">
+    <rdf:rest rdf:nodeID="A286"/>
+    <rdf:first rdf:resource="#MushroomTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#SultanaTopping">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="pt">CoberturaSultana</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#FruitTopping"/>
+    <rdfs:subClassOf rdf:nodeID="A287"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A288">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="#TomatoTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A289">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="#Mild"/>
+    <owl:onProperty rdf:resource="#hasSpiciness"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A42">
+    <owl:onProperty rdf:resource="#hasTopping"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="#AsparagusTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A240">
+    <rdf:rest rdf:nodeID="A290"/>
+    <rdf:first rdf:resource="#PeperonataTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#Medium_5">
+    <rdf:type rdf:resource="#Medium"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#hasTopping">
+    <rdfs:domain rdf:resource="#Pizza"/>
+    <owl:inverseOf rdf:resource="#isToppingOf"/>
+    <rdfs:subPropertyOf rdf:resource="#hasIngredient"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:range rdf:resource="#PizzaTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A13">
+    <owl:onProperty rdf:resource="#hasTopping"/>
+    <owl:someValuesFrom rdf:resource="#TomatoTopping"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A224">
+    <rdf:rest rdf:nodeID="A291"/>
+    <rdf:first rdf:resource="#NutTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#HerbSpiceTopping">
+    <rdfs:subClassOf rdf:resource="#PizzaTopping"/>
+    <rdfs:label xml:lang="pt">CoberturaDeErvas</rdfs:label>
+    <owl:disjointWith rdf:resource="#FishTopping"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:disjointWith rdf:resource="#SauceTopping"/>
+    <owl:disjointWith rdf:resource="#MeatTopping"/>
+    <owl:disjointWith rdf:resource="#FruitTopping"/>
+    <owl:disjointWith rdf:resource="#CheeseTopping"/>
+    <owl:disjointWith rdf:resource="#NutTopping"/>
+    <owl:disjointWith rdf:resource="#VegetableTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A47">
+    <rdf:first rdf:nodeID="A292"/>
+    <rdf:rest rdf:nodeID="A293"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A180">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="#ParmesanTopping"/>
+    <owl:onProperty rdf:resource="#hasTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#Germany">
+    <rdf:type rdf:resource="#Country"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#GorgonzolaTopping">
+    <owl:disjointWith rdf:resource="#GoatsCheeseTopping"/>
+    <owl:disjointWith rdf:resource="#MozzarellaTopping"/>
+    <owl:disjointWith rdf:resource="#FourCheesesTopping"/>
+    <owl:disjointWith rdf:resource="#ParmesanTopping"/>
+    <rdfs:subClassOf rdf:nodeID="A289"/>
+    <rdfs:subClassOf rdf:resource="#CheeseTopping"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="pt">CoberturaDeGorgonzola</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A294">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="#hasTopping"/>
+    <owl:someValuesFrom rdf:resource="#GarlicTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A295">
+    <rdf:rest rdf:nodeID="A296"/>
+    <rdf:first rdf:resource="#MozzarellaTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A297">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="#Mild"/>
+    <owl:onProperty rdf:resource="#hasSpiciness"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A298">
+    <owl:onProperty rdf:resource="#hasTopping"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:allValuesFrom rdf:nodeID="A299"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#American">
+    <rdfs:subClassOf rdf:nodeID="A300"/>
+    <owl:disjointWith rdf:resource="#Capricciosa"/>
+    <owl:disjointWith rdf:resource="#QuattroFormaggi"/>
+    <owl:disjointWith rdf:resource="#Fiorentina"/>
+    <rdfs:subClassOf rdf:nodeID="A7"/>
+    <owl:disjointWith rdf:resource="#Mushroom"/>
+    <owl:disjointWith rdf:resource="#FruttiDiMare"/>
+    <rdfs:label xml:lang="pt">Americana</rdfs:label>
+    <owl:disjointWith rdf:resource="#Giardiniera"/>
+    <owl:disjointWith rdf:resource="#LaReine"/>
+    <rdfs:subClassOf rdf:nodeID="A45"/>
+    <owl:disjointWith rdf:resource="#FourSeasons"/>
+    <owl:disjointWith rdf:resource="#PrinceCarlo"/>
+    <rdfs:subClassOf rdf:resource="#NamedPizza"/>
+    <owl:disjointWith rdf:resource="#Siciliana"/>
+    <rdfs:subClassOf rdf:nodeID="A301"/>
+    <owl:disjointWith rdf:resource="#PolloAdAstra"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:disjointWith rdf:resource="#AmericanHot"/>
+    <owl:disjointWith rdf:resource="#Parmense"/>
+    <owl:disjointWith rdf:resource="#Caprina"/>
+    <owl:disjointWith rdf:resource="#Napoletana"/>
+    <owl:disjointWith rdf:resource="#Margherita"/>
+    <owl:disjointWith rdf:resource="#Soho"/>
+    <owl:disjointWith rdf:resource="#UnclosedPizza"/>
+    <owl:disjointWith rdf:resource="#Rosa"/>
+    <owl:disjointWith rdf:resource="#Cajun"/>
+    <owl:disjointWith rdf:resource="#SloppyGiuseppe"/>
+    <owl:disjointWith rdf:resource="#Veneziana"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A302">
+    <owl:complementOf rdf:nodeID="A26"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A16">
+    <owl:someValuesFrom rdf:resource="#OliveTopping"/>
+    <owl:onProperty rdf:resource="#hasTopping"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#IceCream">
+    <rdfs:subClassOf rdf:nodeID="A88"/>
+    <rdfs:subClassOf rdf:resource="#DomainConcept"/>
+    <rdfs:label xml:lang="pt">Sorvete</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment xml:lang="en">A class to demonstrate mistakes made with setting a property domain. The property hasTopping has a domain of Pizza. This means that the reasoner can infer that all individuals using the hasTopping property must be of type Pizza. Because of the restriction on this class, all members of IceCream must use the hasTopping property, and therefore must also be members of Pizza. However, Pizza and IceCream are disjoint, so this causes an inconsistency. If they were not disjoint, IceCream would be inferred to be a subclass of Pizza.</rdfs:comment>
+    <owl:disjointWith rdf:resource="#PizzaTopping"/>
+    <owl:disjointWith rdf:resource="#PizzaBase"/>
+    <owl:disjointWith rdf:resource="#Pizza"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A209">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="#Medium"/>
+    <owl:onProperty rdf:resource="#hasSpiciness"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A106">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="#hasTopping"/>
+    <owl:someValuesFrom rdf:resource="#CaperTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A211">
+    <rdf:rest rdf:nodeID="A303"/>
+    <rdf:first rdf:resource="#CaperTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A304">
+    <owl:someValuesFrom rdf:resource="#MozzarellaTopping"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="#hasTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A299">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="A249"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A305">
+    <rdf:rest rdf:nodeID="A306"/>
+    <rdf:first rdf:resource="#MushroomTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A307">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="#hasSpiciness"/>
+    <owl:someValuesFrom rdf:resource="#Medium"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A308">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="#hasTopping"/>
+    <owl:someValuesFrom rdf:resource="#HamTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A256">
+    <owl:someValuesFrom rdf:resource="#PeperoniSausageTopping"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="#hasTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#VegetarianTopping">
+    <rdfs:comment xml:lang="en">An example of a covering axiom. VegetarianTopping is equivalent to the union of all toppings in the given axiom. VegetarianToppings can only be Cheese or Vegetable or....etc.</rdfs:comment>
+    <owl:equivalentClass rdf:nodeID="A309"/>
+    <rdfs:label xml:lang="pt">CoberturaVegetariana</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A199">
+    <rdf:rest rdf:nodeID="A194"/>
+    <rdf:first rdf:resource="#AsparagusTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#CheeseyVegetableTopping">
+    <rdfs:subClassOf rdf:resource="#CheeseTopping"/>
+    <rdfs:subClassOf rdf:resource="#VegetableTopping"/>
+    <rdfs:comment xml:lang="en">This class will be inconsistent. This is because we have given it 2 disjoint parents, which means it could never have any members (as nothing can simultaneously be a CheeseTopping and a VegetableTopping). NB Called ProbeInconsistentTopping in the ProtegeOWL Tutorial.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="pt">CoberturaDeQueijoComVegetais</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="#PolloAdAstra">
+    <owl:disjointWith rdf:resource="#FruttiDiMare"/>
+    <owl:disjointWith rdf:resource="#Caprina"/>
+    <owl:disjointWith rdf:resource="#UnclosedPizza"/>
+    <rdfs:subClassOf rdf:nodeID="A234"/>
+    <owl:disjointWith rdf:resource="#Fiorentina"/>
+    <rdfs:label xml:lang="pt">PolloAdAstra</rdfs:label>
+    <rdfs:subClassOf rdf:nodeID="A272"/>
+    <rdfs:subClassOf rdf:nodeID="A310"/>
+    <rdfs:subClassOf rdf:nodeID="A79"/>
+    <owl:disjointWith rdf:resource="#PrinceCarlo"/>
+    <owl:disjointWith rdf:resource="#FourSeasons"/>
+    <owl:disjointWith rdf:resource="#Soho"/>
+    <owl:disjointWith rdf:resource="#SloppyGiuseppe"/>
+    <rdfs:subClassOf rdf:nodeID="A311"/>
+    <rdfs:subClassOf rdf:resource="#NamedPizza"/>
+    <owl:disjointWith rdf:resource="#Parmense"/>
+    <rdfs:subClassOf rdf:nodeID="A294"/>
+    <rdfs:subClassOf rdf:nodeID="A312"/>
+    <owl:disjointWith rdf:resource="#LaReine"/>
+    <owl:disjointWith rdf:resource="#Rosa"/>
+    <owl:disjointWith rdf:resource="#Napoletana"/>
+    <owl:disjointWith rdf:resource="#Siciliana"/>
+    <owl:disjointWith rdf:resource="#Giardiniera"/>
+    <owl:disjointWith rdf:resource="#AmericanHot"/>
+    <owl:disjointWith rdf:resource="#Cajun"/>
+    <owl:disjointWith rdf:resource="#American"/>
+    <owl:disjointWith rdf:resource="#QuattroFormaggi"/>
+    <owl:disjointWith rdf:resource="#Mushroom"/>
+    <owl:disjointWith rdf:resource="#Veneziana"/>
+    <owl:disjointWith rdf:resource="#Margherita"/>
+    <owl:disjointWith rdf:resource="#Capricciosa"/>
+    <rdfs:subClassOf rdf:nodeID="A285"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#Country">
+    <rdfs:comment xml:lang="en">A class that is equivalent to the set of individuals that are described in the enumeration - ie Countries can only be either America, England, France, Germany or Italy and nothing else. Note that these individuals have been asserted to be allDifferent from each other.</rdfs:comment>
+    <rdfs:label xml:lang="pt">Pais</rdfs:label>
+    <owl:equivalentClass rdf:nodeID="A186"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A111">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="#hasTopping"/>
+    <owl:someValuesFrom rdf:resource="#OliveTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A313">
+    <owl:allValuesFrom rdf:nodeID="A314"/>
+    <owl:onProperty rdf:resource="#hasTopping"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#MushroomTopping">
+    <owl:disjointWith rdf:resource="#OnionTopping"/>
+    <owl:disjointWith rdf:resource="#PetitPoisTopping"/>
+    <owl:disjointWith rdf:resource="#RocketTopping"/>
+    <owl:disjointWith rdf:resource="#PepperTopping"/>
+    <owl:disjointWith rdf:resource="#GarlicTopping"/>
+    <rdfs:subClassOf rdf:nodeID="A315"/>
+    <owl:disjointWith rdf:resource="#LeekTopping"/>
+    <owl:disjointWith rdf:resource="#TomatoTopping"/>
+    <rdfs:label xml:lang="pt">CoberturaDeCogumelo</rdfs:label>
+    <owl:disjointWith rdf:resource="#AsparagusTopping"/>
+    <owl:disjointWith rdf:resource="#OliveTopping"/>
+    <rdfs:subClassOf rdf:resource="#VegetableTopping"/>
+    <owl:disjointWith rdf:resource="#CaperTopping"/>
+    <owl:disjointWith rdf:resource="#ArtichokeTopping"/>
+    <owl:disjointWith rdf:resource="#SpinachTopping"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A296">
+    <rdf:first rdf:resource="#OnionTopping"/>
+    <rdf:rest rdf:nodeID="A316"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A317">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="#hasSpiciness"/>
+    <owl:someValuesFrom rdf:resource="#Hot"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A32">
+    <owl:onProperty rdf:resource="#hasTopping"/>
+    <owl:someValuesFrom rdf:resource="#TomatoTopping"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A318">
+    <rdf:first rdf:resource="#America"/>
+    <rdf:rest rdf:nodeID="A152"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A114">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="#hasTopping"/>
+    <owl:someValuesFrom rdf:resource="#CaperTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#America">
+    <rdf:type rdf:resource="#Country"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A19">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="A63"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A319">
+    <owl:onProperty rdf:resource="#hasSpiciness"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="#Medium"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A76">
+    <rdf:first rdf:resource="#TomatoTopping"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#UnclosedPizza">
+    <owl:disjointWith rdf:resource="#Parmense"/>
+    <rdfs:label xml:lang="pt">PizzaAberta</rdfs:label>
+    <owl:disjointWith rdf:resource="#AmericanHot"/>
+    <owl:disjointWith rdf:resource="#Siciliana"/>
+    <owl:disjointWith rdf:resource="#QuattroFormaggi"/>
+    <owl:disjointWith rdf:resource="#SloppyGiuseppe"/>
+    <owl:disjointWith rdf:resource="#Mushroom"/>
+    <rdfs:subClassOf rdf:resource="#NamedPizza"/>
+    <owl:disjointWith rdf:resource="#Veneziana"/>
+    <owl:disjointWith rdf:resource="#Napoletana"/>
+    <owl:disjointWith rdf:resource="#American"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:disjointWith rdf:resource="#Caprina"/>
+    <owl:disjointWith rdf:resource="#Margherita"/>
+    <owl:disjointWith rdf:resource="#Rosa"/>
+    <owl:disjointWith rdf:resource="#Soho"/>
+    <owl:disjointWith rdf:resource="#PrinceCarlo"/>
+    <owl:disjointWith rdf:resource="#Cajun"/>
+    <owl:disjointWith rdf:resource="#PolloAdAstra"/>
+    <owl:disjointWith rdf:resource="#FourSeasons"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An unclosed Pizza cannot be inferred to be either a VegetarianPizza or a NonVegetarianPizza, because it might have other toppings.</rdfs:comment>
+    <rdfs:subClassOf rdf:nodeID="A247"/>
+    <owl:disjointWith rdf:resource="#Fiorentina"/>
+    <owl:disjointWith rdf:resource="#LaReine"/>
+    <owl:disjointWith rdf:resource="#Capricciosa"/>
+    <owl:disjointWith rdf:resource="#Giardiniera"/>
+    <owl:disjointWith rdf:resource="#FruttiDiMare"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#OnionTopping">
+    <owl:disjointWith rdf:resource="#TomatoTopping"/>
+    <rdfs:label xml:lang="pt">CoberturaDeCebola</rdfs:label>
+    <owl:disjointWith rdf:resource="#ArtichokeTopping"/>
+    <owl:disjointWith rdf:resource="#LeekTopping"/>
+    <rdfs:subClassOf rdf:resource="#VegetableTopping"/>
+    <owl:disjointWith rdf:resource="#PepperTopping"/>
+    <owl:disjointWith rdf:resource="#RocketTopping"/>
+    <owl:disjointWith rdf:resource="#MushroomTopping"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:disjointWith rdf:resource="#OliveTopping"/>
+    <owl:disjointWith rdf:resource="#PetitPoisTopping"/>
+    <owl:disjointWith rdf:resource="#AsparagusTopping"/>
+    <owl:disjointWith rdf:resource="#CaperTopping"/>
+    <owl:disjointWith rdf:resource="#GarlicTopping"/>
+    <owl:disjointWith rdf:resource="#SpinachTopping"/>
+    <rdfs:subClassOf rdf:nodeID="A319"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A252">
+    <owl:allValuesFrom rdf:nodeID="A21"/>
+    <owl:onProperty rdf:resource="#hasTopping"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A125">
+    <rdf:rest rdf:nodeID="A320"/>
+    <rdf:first rdf:resource="#CajunSpiceTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A107">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="#hasTopping"/>
+    <owl:someValuesFrom rdf:resource="#PeperoniSausageTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#DeepPanBase_3">
+    <isBaseOf rdf:resource="#CheeseyPizza_2"/>
+    <rdf:type rdf:resource="#DeepPanBase"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#isIngredientOf">
+    <owl:inverseOf rdf:resource="#hasIngredient"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:comment xml:lang="en">The inverse property tree to hasIngredient - all subproperties and attributes of the properties should reflect those under hasIngredient.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A321">
+    <rdf:first rdf:resource="#FourCheesesTopping"/>
+    <rdf:rest rdf:nodeID="A168"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A322">
+    <rdf:first rdf:resource="#MushroomTopping"/>
+    <rdf:rest rdf:nodeID="A323"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#GoatsCheeseTopping">
+    <rdfs:label xml:lang="pt">CoberturaDeQueijoDeCabra	</rdfs:label>
+    <rdfs:subClassOf rdf:nodeID="A248"/>
+    <rdfs:subClassOf rdf:resource="#CheeseTopping"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:disjointWith rdf:resource="#GorgonzolaTopping"/>
+    <owl:disjointWith rdf:resource="#FourCheesesTopping"/>
+    <owl:disjointWith rdf:resource="#ParmesanTopping"/>
+    <owl:disjointWith rdf:resource="#MozzarellaTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A276">
+    <rdf:rest rdf:nodeID="A144"/>
+    <rdf:first rdf:resource="#Hot"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A238">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:intersectionOf rdf:nodeID="A324"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A275">
+    <owl:someValuesFrom rdf:resource="#TomatoTopping"/>
+    <owl:onProperty rdf:resource="#hasTopping"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A315">
+    <owl:onProperty rdf:resource="#hasSpiciness"/>
+    <owl:someValuesFrom rdf:resource="#Mild"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A325">
+    <rdf:rest rdf:nodeID="A48"/>
+    <rdf:first rdf:resource="#HamTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#Rosa">
+    <owl:disjointWith rdf:resource="#FruttiDiMare"/>
+    <owl:disjointWith rdf:resource="#UnclosedPizza"/>
+    <owl:disjointWith rdf:resource="#FourSeasons"/>
+    <rdfs:subClassOf rdf:nodeID="A326"/>
+    <rdfs:label xml:lang="pt">Rosa</rdfs:label>
+    <owl:disjointWith rdf:resource="#PrinceCarlo"/>
+    <owl:disjointWith rdf:resource="#LaReine"/>
+    <owl:disjointWith rdf:resource="#Capricciosa"/>
+    <rdfs:subClassOf rdf:nodeID="A327"/>
+    <owl:disjointWith rdf:resource="#Veneziana"/>
+    <owl:disjointWith rdf:resource="#PolloAdAstra"/>
+    <owl:disjointWith rdf:resource="#Caprina"/>
+    <owl:disjointWith rdf:resource="#Fiorentina"/>
+    <owl:disjointWith rdf:resource="#American"/>
+    <owl:disjointWith rdf:resource="#Napoletana"/>
+    <rdfs:subClassOf rdf:nodeID="A298"/>
+    <rdfs:subClassOf rdf:nodeID="A237"/>
+    <owl:disjointWith rdf:resource="#Giardiniera"/>
+    <owl:disjointWith rdf:resource="#AmericanHot"/>
+    <owl:disjointWith rdf:resource="#Soho"/>
+    <owl:disjointWith rdf:resource="#Cajun"/>
+    <owl:disjointWith rdf:resource="#QuattroFormaggi"/>
+    <owl:disjointWith rdf:resource="#SloppyGiuseppe"/>
+    <owl:disjointWith rdf:resource="#Siciliana"/>
+    <owl:disjointWith rdf:resource="#Parmense"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="#NamedPizza"/>
+    <owl:disjointWith rdf:resource="#Mushroom"/>
+    <owl:disjointWith rdf:resource="#Margherita"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A328">
+    <owl:someValuesFrom rdf:resource="#MushroomTopping"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="#hasTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A329">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+    <owl:distinctMembers rdf:nodeID="A318"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A189">
+    <rdf:rest rdf:nodeID="A66"/>
+    <rdf:first rdf:resource="#VegetableTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A151">
+    <rdf:rest rdf:nodeID="A259"/>
+    <rdf:first rdf:resource="#England"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A330">
+    <rdf:first rdf:resource="#MushroomTopping"/>
+    <rdf:rest rdf:nodeID="A331"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A195">
+    <rdf:rest rdf:nodeID="A332"/>
+    <rdf:first rdf:resource="#ParmesanTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A333">
+    <owl:someValuesFrom rdf:resource="#MozzarellaTopping"/>
+    <owl:onProperty rdf:resource="#hasTopping"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#MixedSeafoodTopping">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:disjointWith rdf:resource="#PrawnsTopping"/>
+    <owl:disjointWith rdf:resource="#AnchoviesTopping"/>
+    <rdfs:label xml:lang="pt">CoberturaDeFrutosDoMarMistos</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#FishTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A334">
+    <rdf:rest rdf:nodeID="A175"/>
+    <rdf:first rdf:resource="#Pizza"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#NamedPizza">
+    <rdfs:subClassOf rdf:resource="#Pizza"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment xml:lang="en">A pizza that can be found on a pizza menu</rdfs:comment>
+    <rdfs:label xml:lang="pt">PizzaComUmNome</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A253">
+    <owl:onProperty rdf:resource="#hasTopping"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="#JalapenoPepperTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A216">
+    <rdf:rest rdf:nodeID="A325"/>
+    <rdf:first rdf:resource="#GarlicTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#PrawnsTopping">
+    <owl:disjointWith rdf:resource="#AnchoviesTopping"/>
+    <owl:disjointWith rdf:resource="#MixedSeafoodTopping"/>
+    <rdfs:label xml:lang="pt">CoberturaDeCamarao</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#FishTopping"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A20">
+    <owl:someValuesFrom rdf:resource="#Mild"/>
+    <owl:onProperty rdf:resource="#hasSpiciness"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A335">
+    <rdf:first rdf:resource="#PeperonataTopping"/>
+    <rdf:rest rdf:nodeID="A336"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A337">
+    <owl:onProperty rdf:resource="#hasTopping"/>
+    <owl:someValuesFrom rdf:resource="#MozzarellaTopping"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A170">
+    <rdf:rest rdf:nodeID="A270"/>
+    <rdf:first rdf:resource="#MozzarellaTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A336">
+    <rdf:rest rdf:nodeID="A246"/>
+    <rdf:first rdf:resource="#PetitPoisTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A338">
+    <owl:onProperty rdf:resource="#hasTopping"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="#LeekTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A157">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="#OliveTopping"/>
+    <owl:onProperty rdf:resource="#hasTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#CheeseTopping">
+    <owl:disjointWith rdf:resource="#SauceTopping"/>
+    <owl:disjointWith rdf:resource="#HerbSpiceTopping"/>
+    <owl:disjointWith rdf:resource="#NutTopping"/>
+    <rdfs:subClassOf rdf:resource="#PizzaTopping"/>
+    <owl:disjointWith rdf:resource="#FishTopping"/>
+    <owl:disjointWith rdf:resource="#VegetableTopping"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:disjointWith rdf:resource="#MeatTopping"/>
+    <rdfs:label xml:lang="pt">CoberturaDeQueijo</rdfs:label>
+    <owl:disjointWith rdf:resource="#FruitTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A269">
+    <rdf:rest rdf:nodeID="A184"/>
+    <rdf:first rdf:resource="#Pizza"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A339">
+    <rdf:first rdf:resource="#Italy"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A127">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="#hasTopping"/>
+    <owl:someValuesFrom rdf:resource="#CheeseTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A340">
+    <owl:unionOf rdf:nodeID="A283"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A31">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="#hasTopping"/>
+    <owl:allValuesFrom rdf:nodeID="A341"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A93">
+    <owl:onProperty rdf:resource="#hasTopping"/>
+    <owl:allValuesFrom rdf:resource="#VegetarianTopping"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A342">
+    <rdf:rest rdf:nodeID="A94"/>
+    <rdf:first rdf:resource="#OliveTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A316">
+    <rdf:rest rdf:nodeID="A153"/>
+    <rdf:first rdf:resource="#PeperonataTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A173">
+    <rdf:first rdf:resource="#TomatoTopping"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A343">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="#TomatoTopping"/>
+    <owl:onProperty rdf:resource="#hasTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#Hot">
+    <rdfs:label xml:lang="pt">Picante</rdfs:label>
+    <owl:disjointWith rdf:resource="#Mild"/>
+    <owl:disjointWith rdf:resource="#Medium"/>
+    <rdfs:subClassOf rdf:resource="#Spiciness"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A128">
+    <rdf:first rdf:resource="#Pizza"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#SultanaTopping_4">
+    <isToppingOf rdf:resource="#CheeseyPizza_2"/>
+    <hasSpiciness rdf:resource="#Medium_5"/>
+    <rdf:type rdf:resource="#SultanaTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A344">
+    <rdf:first rdf:resource="#OliveTopping"/>
+    <rdf:rest rdf:nodeID="A213"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A345">
+    <owl:onProperty rdf:resource="#hasTopping"/>
+    <owl:someValuesFrom rdf:resource="#FishTopping"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#isBaseOf">
+    <rdfs:subPropertyOf rdf:resource="#isIngredientOf"/>
+    <rdfs:domain rdf:resource="#PizzaBase"/>
+    <owl:inverseOf rdf:resource="#hasBase"/>
+    <rdfs:range rdf:resource="#Pizza"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A346">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:allValuesFrom rdf:nodeID="A347"/>
+    <owl:onProperty rdf:resource="#hasTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A348">
+    <rdf:rest rdf:nodeID="A148"/>
+    <rdf:first rdf:resource="#MozzarellaTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FourCheesesTopping">
+    <owl:disjointWith rdf:resource="#ParmesanTopping"/>
+    <owl:disjointWith rdf:resource="#MozzarellaTopping"/>
+    <owl:disjointWith rdf:resource="#GoatsCheeseTopping"/>
+    <owl:disjointWith rdf:resource="#GorgonzolaTopping"/>
+    <rdfs:label xml:lang="pt">CoberturaQuatroQueijos</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#CheeseTopping"/>
+    <rdfs:subClassOf rdf:nodeID="A183"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A349">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="#GarlicTopping"/>
+    <owl:onProperty rdf:resource="#hasTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A311">
+    <owl:someValuesFrom rdf:resource="#CajunSpiceTopping"/>
+    <owl:onProperty rdf:resource="#hasTopping"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A341">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="A295"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A262">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="#TomatoTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#PizzaTopping">
+    <rdfs:label xml:lang="pt">CoberturaDaPizza</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="#DomainConcept"/>
+    <owl:disjointWith rdf:resource="#Pizza"/>
+    <owl:disjointWith rdf:resource="#IceCream"/>
+    <owl:disjointWith rdf:resource="#PizzaBase"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A210">
+    <owl:intersectionOf rdf:nodeID="A51"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A347">
+    <owl:unionOf rdf:nodeID="A350"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A351">
+    <rdf:first rdf:resource="#SweetPepperTopping"/>
+    <rdf:rest rdf:nodeID="A267"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#LaReine">
+    <owl:disjointWith rdf:resource="#Napoletana"/>
+    <owl:disjointWith rdf:resource="#UnclosedPizza"/>
+    <owl:disjointWith rdf:resource="#FourSeasons"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:disjointWith rdf:resource="#AmericanHot"/>
+    <owl:disjointWith rdf:resource="#Mushroom"/>
+    <rdfs:subClassOf rdf:resource="#NamedPizza"/>
+    <owl:disjointWith rdf:resource="#Caprina"/>
+    <owl:disjointWith rdf:resource="#Cajun"/>
+    <owl:disjointWith rdf:resource="#SloppyGiuseppe"/>
+    <rdfs:subClassOf rdf:nodeID="A230"/>
+    <owl:disjointWith rdf:resource="#PolloAdAstra"/>
+    <rdfs:subClassOf rdf:nodeID="A308"/>
+    <owl:disjointWith rdf:resource="#QuattroFormaggi"/>
+    <owl:disjointWith rdf:resource="#Soho"/>
+    <rdfs:subClassOf rdf:nodeID="A352"/>
+    <rdfs:label xml:lang="pt">LaReine</rdfs:label>
+    <owl:disjointWith rdf:resource="#Veneziana"/>
+    <owl:disjointWith rdf:resource="#Giardiniera"/>
+    <owl:disjointWith rdf:resource="#American"/>
+    <rdfs:subClassOf rdf:nodeID="A333"/>
+    <owl:disjointWith rdf:resource="#Margherita"/>
+    <owl:disjointWith rdf:resource="#Siciliana"/>
+    <owl:disjointWith rdf:resource="#Fiorentina"/>
+    <owl:disjointWith rdf:resource="#PrinceCarlo"/>
+    <rdfs:subClassOf rdf:nodeID="A6"/>
+    <owl:disjointWith rdf:resource="#Parmense"/>
+    <owl:disjointWith rdf:resource="#FruttiDiMare"/>
+    <rdfs:subClassOf rdf:nodeID="A353"/>
+    <owl:disjointWith rdf:resource="#Capricciosa"/>
+    <owl:disjointWith rdf:resource="#Rosa"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#Mild_9">
+    <rdf:type rdf:resource="#Mild"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A354">
+    <rdf:first rdf:resource="#MozzarellaTopping"/>
+    <rdf:rest rdf:nodeID="A225"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A250">
+    <rdf:rest rdf:nodeID="A120"/>
+    <rdf:first rdf:resource="#MozzarellaTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A355">
+    <rdf:rest rdf:nodeID="A330"/>
+    <rdf:first rdf:resource="#MozzarellaTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A208">
+    <owl:onProperty rdf:resource="#hasSpiciness"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="#Medium"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A11">
+    <owl:someValuesFrom rdf:resource="#AnchoviesTopping"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="#hasTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A15">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="#hasTopping"/>
+    <owl:someValuesFrom rdf:resource="#CaperTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A244">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="#TomatoTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A309">
+    <owl:intersectionOf rdf:nodeID="A82"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A356">
+    <owl:someValuesFrom rdf:resource="#Medium"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="#hasSpiciness"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A84">
+    <owl:someValuesFrom rdf:resource="#Hot"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="#hasSpiciness"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#Mild">
+    <owl:disjointWith rdf:resource="#Medium"/>
+    <owl:disjointWith rdf:resource="#Hot"/>
+    <rdfs:subClassOf rdf:resource="#Spiciness"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="pt">NaoPicante</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A357">
+    <owl:onProperty rdf:resource="#hasTopping"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="#OliveTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A332">
+    <rdf:first rdf:resource="#HamTopping"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A358">
+    <rdf:rest rdf:nodeID="A169"/>
+    <rdf:first rdf:resource="#TomatoTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A30">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="#MozzarellaTopping"/>
+    <owl:onProperty rdf:resource="#hasTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A286">
+    <rdf:first rdf:resource="#OliveTopping"/>
+    <rdf:rest rdf:nodeID="A359"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#MozzarellaTopping">
+    <rdfs:label xml:lang="pt">CoberturaDeMozzarella</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:nodeID="A360"/>
+    <rdfs:subClassOf rdf:resource="#CheeseTopping"/>
+    <rdfs:subClassOf rdf:nodeID="A361"/>
+    <owl:disjointWith rdf:resource="#ParmesanTopping"/>
+    <owl:disjointWith rdf:resource="#GorgonzolaTopping"/>
+    <owl:disjointWith rdf:resource="#FourCheesesTopping"/>
+    <owl:disjointWith rdf:resource="#GoatsCheeseTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A360">
+    <owl:onProperty rdf:resource="#hasSpiciness"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="#Mild"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A96">
+    <owl:onProperty rdf:resource="#hasSpiciness"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="#Mild"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#HotSpicedBeefTopping">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="pt">CoberturaDeBifePicante</rdfs:label>
+    <owl:disjointWith rdf:resource="#ChickenTopping"/>
+    <owl:disjointWith rdf:resource="#PeperoniSausageTopping"/>
+    <owl:disjointWith rdf:resource="#HamTopping"/>
+    <rdfs:subClassOf rdf:resource="#MeatTopping"/>
+    <rdfs:subClassOf rdf:nodeID="A362"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A201">
+    <rdf:rest rdf:nodeID="A165"/>
+    <rdf:first rdf:resource="#MozzarellaTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A178">
+    <owl:onProperty rdf:resource="#hasBase"/>
+    <owl:someValuesFrom rdf:resource="#PizzaBase"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#RosemaryTopping">
+    <owl:disjointWith rdf:resource="#CajunSpiceTopping"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="pt">CoberturaRosemary</rdfs:label>
+    <rdfs:subClassOf rdf:nodeID="A2"/>
+    <rdfs:subClassOf rdf:resource="#HerbSpiceTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A187">
+    <rdf:rest rdf:nodeID="A220"/>
+    <rdf:first rdf:nodeID="A117"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A323">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="#TomatoTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A109">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="#hasTopping"/>
+    <owl:allValuesFrom rdf:nodeID="A340"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A147">
+    <owl:unionOf rdf:nodeID="A163"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A363">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="A354"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A350">
+    <rdf:first rdf:resource="#GarlicTopping"/>
+    <rdf:rest rdf:nodeID="A348"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A364">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="A198"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A365">
+    <rdf:rest rdf:nodeID="A214"/>
+    <rdf:first rdf:nodeID="A260"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#CheeseyPizza_2">
+    <hasBase rdf:resource="#DeepPanBase_3"/>
+    <hasTopping rdf:resource="#SultanaTopping_4"/>
+    <rdf:type rdf:resource="#CheeseyPizza"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A331">
+    <rdf:first rdf:resource="#OliveTopping"/>
+    <rdf:rest rdf:nodeID="A121"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ParmaHamTopping">
+    <rdfs:subClassOf rdf:resource="#HamTopping"/>
+    <rdfs:subClassOf rdf:nodeID="A212"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="pt">CoberturaDePrezuntoParma</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A135">
+    <rdf:first rdf:resource="#TomatoTopping"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A366">
+    <owl:onProperty rdf:resource="#hasTopping"/>
+    <owl:someValuesFrom rdf:resource="#FourCheesesTopping"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A367">
+    <rdf:rest rdf:nodeID="A368"/>
+    <rdf:first rdf:nodeID="A369"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A69">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:intersectionOf rdf:nodeID="A280"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#CaperTopping">
+    <owl:disjointWith rdf:resource="#RocketTopping"/>
+    <owl:disjointWith rdf:resource="#OnionTopping"/>
+    <owl:disjointWith rdf:resource="#LeekTopping"/>
+    <owl:disjointWith rdf:resource="#OliveTopping"/>
+    <owl:disjointWith rdf:resource="#ArtichokeTopping"/>
+    <owl:disjointWith rdf:resource="#PepperTopping"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:disjointWith rdf:resource="#TomatoTopping"/>
+    <rdfs:label xml:lang="pt">CoberturaDeCaper</rdfs:label>
+    <owl:disjointWith rdf:resource="#PetitPoisTopping"/>
+    <owl:disjointWith rdf:resource="#MushroomTopping"/>
+    <rdfs:subClassOf rdf:nodeID="A297"/>
+    <owl:disjointWith rdf:resource="#GarlicTopping"/>
+    <owl:disjointWith rdf:resource="#SpinachTopping"/>
+    <owl:disjointWith rdf:resource="#AsparagusTopping"/>
+    <rdfs:subClassOf rdf:resource="#VegetableTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A233">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="A370"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A57">
+    <owl:onProperty rdf:resource="#hasTopping"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="#GarlicTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A371">
+    <owl:someValuesFrom rdf:resource="#MeatTopping"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="#hasTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#Medium">
+    <owl:disjointWith rdf:resource="#Mild"/>
+    <owl:disjointWith rdf:resource="#Hot"/>
+    <rdfs:label xml:lang="pt">Media</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#Spiciness"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A24">
+    <rdf:rest rdf:nodeID="A64"/>
+    <rdf:first rdf:resource="#SauceTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A310">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="#hasTopping"/>
+    <owl:someValuesFrom rdf:resource="#TomatoTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A327">
+    <owl:someValuesFrom rdf:resource="#GorgonzolaTopping"/>
+    <owl:onProperty rdf:resource="#hasTopping"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A372">
+    <owl:onProperty rdf:resource="#hasTopping"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="#TomatoTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A373">
+    <rdf:first rdf:resource="#MozzarellaTopping"/>
+    <rdf:rest rdf:nodeID="A342"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A374">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="#hasTopping"/>
+    <owl:someValuesFrom rdf:resource="#MozzarellaTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A105">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="#TomatoTopping"/>
+    <owl:onProperty rdf:resource="#hasTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A132">
+    <rdf:first rdf:resource="#MozzarellaTopping"/>
+    <rdf:rest rdf:nodeID="A122"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A375">
+    <owl:someValuesFrom rdf:resource="#RocketTopping"/>
+    <owl:onProperty rdf:resource="#hasTopping"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A376">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="#hasTopping"/>
+    <owl:someValuesFrom rdf:resource="#OliveTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A110">
+    <owl:onProperty rdf:resource="#hasTopping"/>
+    <owl:someValuesFrom rdf:resource="#MozzarellaTopping"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A99">
+    <rdf:rest rdf:nodeID="A129"/>
+    <rdf:first rdf:resource="#ParmesanTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#HotGreenPepperTopping">
+    <rdfs:label xml:lang="pt">CoberturaDePimentaoVerdePicante</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:nodeID="A377"/>
+    <rdfs:subClassOf rdf:resource="#GreenPepperTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A287">
+    <owl:someValuesFrom rdf:resource="#Medium"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="#hasSpiciness"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ThinAndCrispyBase">
+    <rdfs:subClassOf rdf:resource="#PizzaBase"/>
+    <rdfs:label xml:lang="pt">BaseFinaEQuebradica</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:disjointWith rdf:resource="#DeepPanBase"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A264">
+    <rdf:first rdf:resource="#Pizza"/>
+    <rdf:rest rdf:nodeID="A378"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A284">
+    <rdf:rest rdf:nodeID="A205"/>
+    <rdf:first rdf:resource="#CaperTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A359">
+    <rdf:rest rdf:nodeID="A89"/>
+    <rdf:first rdf:resource="#PeperoniSausageTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A254">
+    <owl:someValuesFrom rdf:resource="#TomatoTopping"/>
+    <owl:onProperty rdf:resource="#hasTopping"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#Italy">
+    <rdf:type rdf:resource="#Country"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A34">
+    <owl:someValuesFrom rdf:resource="#TobascoPepperSauce"/>
+    <owl:onProperty rdf:resource="#hasTopping"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A130">
+    <rdf:first rdf:resource="#MozzarellaTopping"/>
+    <rdf:rest rdf:nodeID="A241"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A378">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:nodeID="A371"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A54">
+    <rdf:first rdf:resource="#RosemaryTopping"/>
+    <rdf:rest rdf:nodeID="A288"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#NonVegetarianPizza">
+    <owl:equivalentClass rdf:nodeID="A251"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="pt">PizzaNaoVegetariana</rdfs:label>
+    <rdfs:comment xml:lang="en">Any Pizza that is not a VegetarianPizza</rdfs:comment>
+    <owl:disjointWith rdf:resource="#VegetarianPizza"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A352">
+    <owl:onProperty rdf:resource="#hasTopping"/>
+    <owl:someValuesFrom rdf:resource="#TomatoTopping"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#SlicedTomatoTopping">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:disjointWith rdf:resource="#SundriedTomatoTopping"/>
+    <rdfs:subClassOf rdf:resource="#TomatoTopping"/>
+    <rdfs:subClassOf rdf:nodeID="A141"/>
+    <rdfs:label xml:lang="pt">CoberturaDeTomateFatiado</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A292">
+    <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</owl:minCardinality>
+    <owl:onProperty rdf:resource="#hasTopping"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A379">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="#hasTopping"/>
+    <owl:someValuesFrom rdf:resource="#PetitPoisTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A243">
+    <owl:unionOf rdf:nodeID="A58"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A320">
+    <rdf:first rdf:resource="#ChickenTopping"/>
+    <rdf:rest rdf:nodeID="A258"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A235">
+    <owl:unionOf rdf:nodeID="A358"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#hasSpiciness">
+    <rdfs:comment xml:lang="en">A property created to be used with the ValuePartition - Spiciness.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:range rdf:resource="#Spiciness"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#NutTopping">
+    <owl:disjointWith rdf:resource="#MeatTopping"/>
+    <owl:disjointWith rdf:resource="#HerbSpiceTopping"/>
+    <rdfs:subClassOf rdf:resource="#PizzaTopping"/>
+    <owl:disjointWith rdf:resource="#FishTopping"/>
+    <rdfs:subClassOf rdf:nodeID="A68"/>
+    <rdfs:label xml:lang="pt">CoberturaDeCastanha</rdfs:label>
+    <owl:disjointWith rdf:resource="#CheeseTopping"/>
+    <owl:disjointWith rdf:resource="#SauceTopping"/>
+    <owl:disjointWith rdf:resource="#VegetableTopping"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:disjointWith rdf:resource="#FruitTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A293">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="#Pizza"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#GreenPepperTopping">
+    <rdfs:subClassOf rdf:resource="#PepperTopping"/>
+    <owl:disjointWith rdf:resource="#SweetPepperTopping"/>
+    <owl:disjointWith rdf:resource="#JalapenoPepperTopping"/>
+    <owl:disjointWith rdf:resource="#PeperonataTopping"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="pt">CoberturaDePimentaoVerde</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A116">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="#AnchoviesTopping"/>
+    <owl:onProperty rdf:resource="#hasTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A123">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="#TomatoTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A306">
+    <rdf:first rdf:resource="#OliveTopping"/>
+    <rdf:rest rdf:nodeID="A335"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#DomainConcept">
+    <owl:disjointWith rdf:resource="#ValuePartition"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A43">
+    <owl:onProperty rdf:resource="#hasTopping"/>
+    <owl:someValuesFrom rdf:resource="#MozzarellaTopping"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#Fiorentina">
+    <rdfs:subClassOf rdf:nodeID="A190"/>
+    <owl:disjointWith rdf:resource="#QuattroFormaggi"/>
+    <owl:disjointWith rdf:resource="#Veneziana"/>
+    <owl:disjointWith rdf:resource="#Caprina"/>
+    <rdfs:subClassOf rdf:nodeID="A380"/>
+    <rdfs:subClassOf rdf:nodeID="A357"/>
+    <rdfs:subClassOf rdf:resource="#NamedPizza"/>
+    <owl:disjointWith rdf:resource="#LaReine"/>
+    <owl:disjointWith rdf:resource="#Capricciosa"/>
+    <owl:disjointWith rdf:resource="#Margherita"/>
+    <owl:disjointWith rdf:resource="#Siciliana"/>
+    <owl:disjointWith rdf:resource="#PrinceCarlo"/>
+    <rdfs:label xml:lang="pt">Fiorentina</rdfs:label>
+    <owl:disjointWith rdf:resource="#Parmense"/>
+    <rdfs:subClassOf rdf:nodeID="A381"/>
+    <rdfs:subClassOf rdf:nodeID="A372"/>
+    <owl:disjointWith rdf:resource="#SloppyGiuseppe"/>
+    <owl:disjointWith rdf:resource="#Rosa"/>
+    <owl:disjointWith rdf:resource="#FourSeasons"/>
+    <owl:disjointWith rdf:resource="#American"/>
+    <rdfs:subClassOf rdf:nodeID="A349"/>
+    <owl:disjointWith rdf:resource="#Soho"/>
+    <owl:disjointWith rdf:resource="#UnclosedPizza"/>
+    <rdfs:subClassOf rdf:nodeID="A1"/>
+    <owl:disjointWith rdf:resource="#Napoletana"/>
+    <owl:disjointWith rdf:resource="#PolloAdAstra"/>
+    <owl:disjointWith rdf:resource="#Giardiniera"/>
+    <owl:disjointWith rdf:resource="#Cajun"/>
+    <owl:disjointWith rdf:resource="#AmericanHot"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:disjointWith rdf:resource="#FruttiDiMare"/>
+    <owl:disjointWith rdf:resource="#Mushroom"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A381">
+    <owl:onProperty rdf:resource="#hasTopping"/>
+    <owl:someValuesFrom rdf:resource="#ParmesanTopping"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A382">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="#hasSpiciness"/>
+    <owl:someValuesFrom rdf:resource="#Hot"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A115">
+    <owl:onProperty rdf:resource="#hasTopping"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="#MozzarellaTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A221">
+    <owl:someValuesFrom rdf:resource="#GreenPepperTopping"/>
+    <owl:onProperty rdf:resource="#hasTopping"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A301">
+    <owl:someValuesFrom rdf:resource="#PeperoniSausageTopping"/>
+    <owl:onProperty rdf:resource="#hasTopping"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A245">
+    <owl:someValuesFrom rdf:resource="#Mild"/>
+    <owl:onProperty rdf:resource="#hasSpiciness"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A139">
+    <rdf:rest rdf:nodeID="A339"/>
+    <rdf:first rdf:resource="#Germany"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#AsparagusTopping">
+    <owl:disjointWith rdf:resource="#MushroomTopping"/>
+    <owl:disjointWith rdf:resource="#RocketTopping"/>
+    <rdfs:subClassOf rdf:nodeID="A164"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:disjointWith rdf:resource="#ArtichokeTopping"/>
+    <owl:disjointWith rdf:resource="#OnionTopping"/>
+    <owl:disjointWith rdf:resource="#PetitPoisTopping"/>
+    <owl:disjointWith rdf:resource="#PepperTopping"/>
+    <owl:disjointWith rdf:resource="#OliveTopping"/>
+    <owl:disjointWith rdf:resource="#GarlicTopping"/>
+    <rdfs:label xml:lang="pt">CoberturaDeAspargos</rdfs:label>
+    <owl:disjointWith rdf:resource="#LeekTopping"/>
+    <owl:disjointWith rdf:resource="#TomatoTopping"/>
+    <owl:disjointWith rdf:resource="#SpinachTopping"/>
+    <owl:disjointWith rdf:resource="#CaperTopping"/>
+    <rdfs:subClassOf rdf:resource="#VegetableTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#QuattroFormaggi">
+    <owl:disjointWith rdf:resource="#Napoletana"/>
+    <owl:disjointWith rdf:resource="#Cajun"/>
+    <owl:disjointWith rdf:resource="#Parmense"/>
+    <owl:disjointWith rdf:resource="#LaReine"/>
+    <owl:disjointWith rdf:resource="#Fiorentina"/>
+    <rdfs:subClassOf rdf:resource="#NamedPizza"/>
+    <owl:disjointWith rdf:resource="#UnclosedPizza"/>
+    <owl:disjointWith rdf:resource="#Siciliana"/>
+    <owl:disjointWith rdf:resource="#Caprina"/>
+    <owl:disjointWith rdf:resource="#Rosa"/>
+    <owl:disjointWith rdf:resource="#Capricciosa"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:disjointWith rdf:resource="#AmericanHot"/>
+    <rdfs:subClassOf rdf:nodeID="A313"/>
+    <rdfs:subClassOf rdf:nodeID="A366"/>
+    <owl:disjointWith rdf:resource="#FruttiDiMare"/>
+    <owl:disjointWith rdf:resource="#Soho"/>
+    <owl:disjointWith rdf:resource="#SloppyGiuseppe"/>
+    <owl:disjointWith rdf:resource="#Mushroom"/>
+    <owl:disjointWith rdf:resource="#PolloAdAstra"/>
+    <owl:disjointWith rdf:resource="#PrinceCarlo"/>
+    <rdfs:label xml:lang="pt">QuatroQueijos</rdfs:label>
+    <owl:disjointWith rdf:resource="#American"/>
+    <owl:disjointWith rdf:resource="#FourSeasons"/>
+    <rdfs:subClassOf rdf:nodeID="A191"/>
+    <owl:disjointWith rdf:resource="#Veneziana"/>
+    <owl:disjointWith rdf:resource="#Giardiniera"/>
+    <owl:disjointWith rdf:resource="#Margherita"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A383">
+    <rdf:first rdf:resource="#LeekTopping"/>
+    <rdf:rest rdf:nodeID="A384"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#PizzaBase">
+    <owl:disjointWith rdf:resource="#Pizza"/>
+    <owl:disjointWith rdf:resource="#IceCream"/>
+    <owl:disjointWith rdf:resource="#PizzaTopping"/>
+    <rdfs:subClassOf rdf:resource="#DomainConcept"/>
+    <rdfs:label xml:lang="pt">BaseDaPizza</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A300">
+    <owl:allValuesFrom rdf:nodeID="A200"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="#hasTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#Giardiniera">
+    <owl:disjointWith rdf:resource="#LaReine"/>
+    <owl:disjointWith rdf:resource="#Siciliana"/>
+    <rdfs:subClassOf rdf:nodeID="A379"/>
+    <owl:disjointWith rdf:resource="#American"/>
+    <owl:disjointWith rdf:resource="#PolloAdAstra"/>
+    <owl:disjointWith rdf:resource="#Caprina"/>
+    <owl:disjointWith rdf:resource="#FruttiDiMare"/>
+    <owl:disjointWith rdf:resource="#Parmense"/>
+    <owl:disjointWith rdf:resource="#Capricciosa"/>
+    <rdfs:subClassOf rdf:resource="#NamedPizza"/>
+    <rdfs:subClassOf rdf:nodeID="A242"/>
+    <owl:disjointWith rdf:resource="#Soho"/>
+    <owl:disjointWith rdf:resource="#Cajun"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:disjointWith rdf:resource="#SloppyGiuseppe"/>
+    <rdfs:subClassOf rdf:nodeID="A204"/>
+    <owl:disjointWith rdf:resource="#Rosa"/>
+    <owl:disjointWith rdf:resource="#Veneziana"/>
+    <owl:disjointWith rdf:resource="#Fiorentina"/>
+    <rdfs:subClassOf rdf:nodeID="A374"/>
+    <owl:disjointWith rdf:resource="#UnclosedPizza"/>
+    <owl:disjointWith rdf:resource="#QuattroFormaggi"/>
+    <rdfs:subClassOf rdf:nodeID="A328"/>
+    <rdfs:subClassOf rdf:nodeID="A376"/>
+    <owl:disjointWith rdf:resource="#Mushroom"/>
+    <owl:disjointWith rdf:resource="#FourSeasons"/>
+    <owl:disjointWith rdf:resource="#Margherita"/>
+    <owl:disjointWith rdf:resource="#PrinceCarlo"/>
+    <rdfs:label xml:lang="pt">Giardiniera</rdfs:label>
+    <rdfs:subClassOf rdf:nodeID="A271"/>
+    <owl:disjointWith rdf:resource="#AmericanHot"/>
+    <rdfs:subClassOf rdf:nodeID="A207"/>
+    <rdfs:subClassOf rdf:nodeID="A338"/>
+    <owl:disjointWith rdf:resource="#Napoletana"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A167">
+    <rdf:first rdf:resource="#CaperTopping"/>
+    <rdf:rest rdf:nodeID="A373"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A385">
+    <owl:someValuesFrom rdf:resource="#Mild"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="#hasSpiciness"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#Pizza_1">
+    <rdf:type rdf:resource="#Pizza"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#VegetarianPizza">
+    <rdfs:label xml:lang="pt">PizzaVegetariana</rdfs:label>
+    <owl:equivalentClass rdf:nodeID="A192"/>
+    <rdfs:comment xml:lang="en">Any pizza that does not have fish topping and does not have meat topping is a VegetarianPizza. Members of this class do not need to have any toppings at all.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:disjointWith rdf:resource="#NonVegetarianPizza"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#TobascoPepperSauce">
+    <rdfs:subClassOf rdf:resource="#SauceTopping"/>
+    <rdfs:subClassOf rdf:nodeID="A386"/>
+    <rdfs:label xml:lang="pt">MolhoTobascoPepper</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A314">
+    <owl:unionOf rdf:nodeID="A321"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A362">
+    <owl:someValuesFrom rdf:resource="#Hot"/>
+    <owl:onProperty rdf:resource="#hasSpiciness"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A273">
+    <owl:onProperty rdf:resource="#hasTopping"/>
+    <owl:someValuesFrom rdf:resource="#GoatsCheeseTopping"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A312">
+    <owl:onProperty rdf:resource="#hasTopping"/>
+    <owl:someValuesFrom rdf:resource="#ChickenTopping"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A65">
+    <rdf:first rdf:resource="#CheeseTopping"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A59">
+    <rdf:rest rdf:nodeID="A305"/>
+    <rdf:first rdf:resource="#MozzarellaTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A155">
+    <owl:onProperty rdf:resource="#hasTopping"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:allValuesFrom rdf:nodeID="A363"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A303">
+    <rdf:first rdf:resource="#MozzarellaTopping"/>
+    <rdf:rest rdf:nodeID="A344"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A387">
+    <owl:intersectionOf rdf:nodeID="A334"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A255">
+    <owl:someValuesFrom rdf:resource="#MozzarellaTopping"/>
+    <owl:onProperty rdf:resource="#hasTopping"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A227">
+    <rdf:first rdf:resource="#Pizza"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#HamTopping">
+    <owl:disjointWith rdf:resource="#PeperoniSausageTopping"/>
+    <owl:disjointWith rdf:resource="#HotSpicedBeefTopping"/>
+    <owl:disjointWith rdf:resource="#ChickenTopping"/>
+    <rdfs:subClassOf rdf:resource="#MeatTopping"/>
+    <rdfs:label xml:lang="pt">CoberturaDePresunto</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A290">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="#CaperTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#VegetableTopping">
+    <owl:disjointWith rdf:resource="#FishTopping"/>
+    <owl:disjointWith rdf:resource="#MeatTopping"/>
+    <rdfs:subClassOf rdf:resource="#PizzaTopping"/>
+    <owl:disjointWith rdf:resource="#SauceTopping"/>
+    <owl:disjointWith rdf:resource="#HerbSpiceTopping"/>
+    <owl:disjointWith rdf:resource="#NutTopping"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:disjointWith rdf:resource="#FruitTopping"/>
+    <owl:disjointWith rdf:resource="#CheeseTopping"/>
+    <rdfs:label xml:lang="pt">CoberturaDeVegetais</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A388">
+    <rdf:rest rdf:nodeID="A355"/>
+    <rdf:first rdf:resource="#HamTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A389">
+    <owl:someValuesFrom rdf:resource="#TomatoTopping"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="#hasTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A108">
+    <owl:someValuesFrom rdf:resource="#AnchoviesTopping"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="#hasTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="">
+    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">version 1.3</owl:versionInfo>
+    <rdfs:comment xml:lang="en">An example ontology that contains all constructs required for the various versions of the Pizza Tutorial run by Manchester University (see http://www.co-ode.org/resources/tutorials/)</rdfs:comment>
+    <owl:imports rdf:resource="http://protege.stanford.edu/plugins/owl/protege"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <protege:defaultLanguage rdf:datatype="http://www.w3.org/2001/XMLSchema#string">en</protege:defaultLanguage>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A390">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:nodeID="A317"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A377">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="#hasSpiciness"/>
+    <owl:someValuesFrom rdf:resource="#Hot"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A361">
+    <owl:hasValue rdf:resource="#Italy"/>
+    <owl:onProperty rdf:resource="#hasCountryOfOrigin"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#Soho">
+    <owl:disjointWith rdf:resource="#FourSeasons"/>
+    <rdfs:subClassOf rdf:nodeID="A391"/>
+    <owl:disjointWith rdf:resource="#Capricciosa"/>
+    <owl:disjointWith rdf:resource="#Fiorentina"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:disjointWith rdf:resource="#AmericanHot"/>
+    <owl:disjointWith rdf:resource="#Giardiniera"/>
+    <owl:disjointWith rdf:resource="#Mushroom"/>
+    <rdfs:subClassOf rdf:nodeID="A343"/>
+    <owl:disjointWith rdf:resource="#Margherita"/>
+    <rdfs:subClassOf rdf:nodeID="A44"/>
+    <owl:disjointWith rdf:resource="#American"/>
+    <rdfs:subClassOf rdf:nodeID="A171"/>
+    <owl:disjointWith rdf:resource="#FruttiDiMare"/>
+    <owl:disjointWith rdf:resource="#Caprina"/>
+    <owl:disjointWith rdf:resource="#Veneziana"/>
+    <owl:disjointWith rdf:resource="#SloppyGiuseppe"/>
+    <owl:disjointWith rdf:resource="#QuattroFormaggi"/>
+    <owl:disjointWith rdf:resource="#UnclosedPizza"/>
+    <owl:disjointWith rdf:resource="#Parmense"/>
+    <rdfs:label xml:lang="pt">Soho</rdfs:label>
+    <owl:disjointWith rdf:resource="#PolloAdAstra"/>
+    <rdfs:subClassOf rdf:nodeID="A337"/>
+    <rdfs:subClassOf rdf:resource="#NamedPizza"/>
+    <owl:disjointWith rdf:resource="#Cajun"/>
+    <owl:disjointWith rdf:resource="#LaReine"/>
+    <owl:disjointWith rdf:resource="#Rosa"/>
+    <rdfs:subClassOf rdf:nodeID="A346"/>
+    <rdfs:subClassOf rdf:nodeID="A375"/>
+    <owl:disjointWith rdf:resource="#PrinceCarlo"/>
+    <owl:disjointWith rdf:resource="#Siciliana"/>
+    <owl:disjointWith rdf:resource="#Napoletana"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A278">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="A383"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A369">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:complementOf rdf:nodeID="A345"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A326">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="#TomatoTopping"/>
+    <owl:onProperty rdf:resource="#hasTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A104">
+    <rdf:rest rdf:nodeID="A351"/>
+    <rdf:first rdf:resource="#RedOnionTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A174">
+    <owl:onProperty rdf:resource="#hasSpiciness"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="#Hot"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A368">
+    <rdf:first rdf:resource="#Pizza"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A41">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="#hasTopping"/>
+    <owl:allValuesFrom rdf:nodeID="A364"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A38">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="#TomatoTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A291">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="#SauceTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A112">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="#hasTopping"/>
+    <owl:allValuesFrom rdf:nodeID="A8"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A266">
+    <owl:allValuesFrom rdf:nodeID="A218"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="#hasTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A282">
+    <owl:intersectionOf rdf:nodeID="A365"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A384">
+    <rdf:first rdf:resource="#MozzarellaTopping"/>
+    <rdf:rest rdf:nodeID="A53"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A179">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="#LeekTopping"/>
+    <owl:onProperty rdf:resource="#hasTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A324">
+    <rdf:rest rdf:nodeID="A92"/>
+    <rdf:first rdf:resource="#Pizza"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A231">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="A388"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A74">
+    <rdf:first rdf:resource="#PizzaTopping"/>
+    <rdf:rest rdf:nodeID="A390"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A70">
+    <rdf:first rdf:resource="#JalapenoPepperTopping"/>
+    <rdf:rest rdf:nodeID="A27"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#RedOnionTopping">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="pt">CoberturaDeCebolaVermelha</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#OnionTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A386">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="#hasSpiciness"/>
+    <owl:someValuesFrom rdf:resource="#Hot"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#PetitPoisTopping">
+    <owl:disjointWith rdf:resource="#SpinachTopping"/>
+    <owl:disjointWith rdf:resource="#GarlicTopping"/>
+    <rdfs:subClassOf rdf:nodeID="A385"/>
+    <owl:disjointWith rdf:resource="#MushroomTopping"/>
+    <owl:disjointWith rdf:resource="#AsparagusTopping"/>
+    <owl:disjointWith rdf:resource="#TomatoTopping"/>
+    <rdfs:subClassOf rdf:resource="#VegetableTopping"/>
+    <owl:disjointWith rdf:resource="#ArtichokeTopping"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:disjointWith rdf:resource="#OnionTopping"/>
+    <owl:disjointWith rdf:resource="#LeekTopping"/>
+    <owl:disjointWith rdf:resource="#RocketTopping"/>
+    <owl:disjointWith rdf:resource="#PepperTopping"/>
+    <rdfs:label xml:lang="pt">CoberturaPetitPois</rdfs:label>
+    <owl:disjointWith rdf:resource="#OliveTopping"/>
+    <owl:disjointWith rdf:resource="#CaperTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#SpinachTopping">
+    <owl:disjointWith rdf:resource="#TomatoTopping"/>
+    <owl:disjointWith rdf:resource="#MushroomTopping"/>
+    <rdfs:subClassOf rdf:nodeID="A3"/>
+    <owl:disjointWith rdf:resource="#RocketTopping"/>
+    <owl:disjointWith rdf:resource="#AsparagusTopping"/>
+    <owl:disjointWith rdf:resource="#PetitPoisTopping"/>
+    <owl:disjointWith rdf:resource="#GarlicTopping"/>
+    <rdfs:label xml:lang="pt">CoberturaDeEspinafre</rdfs:label>
+    <owl:disjointWith rdf:resource="#PepperTopping"/>
+    <owl:disjointWith rdf:resource="#OnionTopping"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:disjointWith rdf:resource="#LeekTopping"/>
+    <owl:disjointWith rdf:resource="#OliveTopping"/>
+    <owl:disjointWith rdf:resource="#ArtichokeTopping"/>
+    <rdfs:subClassOf rdf:resource="#VegetableTopping"/>
+    <owl:disjointWith rdf:resource="#CaperTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A52">
+    <rdf:first rdf:nodeID="A382"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A380">
+    <owl:onProperty rdf:resource="#hasTopping"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:allValuesFrom rdf:nodeID="A98"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#GarlicTopping">
+    <owl:disjointWith rdf:resource="#ArtichokeTopping"/>
+    <owl:disjointWith rdf:resource="#TomatoTopping"/>
+    <rdfs:subClassOf rdf:resource="#VegetableTopping"/>
+    <owl:disjointWith rdf:resource="#PetitPoisTopping"/>
+    <rdfs:subClassOf rdf:nodeID="A356"/>
+    <owl:disjointWith rdf:resource="#PepperTopping"/>
+    <owl:disjointWith rdf:resource="#LeekTopping"/>
+    <owl:disjointWith rdf:resource="#CaperTopping"/>
+    <owl:disjointWith rdf:resource="#OliveTopping"/>
+    <owl:disjointWith rdf:resource="#RocketTopping"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="pt">CoberturaDeAlho</rdfs:label>
+    <owl:disjointWith rdf:resource="#SpinachTopping"/>
+    <owl:disjointWith rdf:resource="#OnionTopping"/>
+    <owl:disjointWith rdf:resource="#AsparagusTopping"/>
+    <owl:disjointWith rdf:resource="#MushroomTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#MeatyPizza">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:equivalentClass rdf:nodeID="A263"/>
+    <rdfs:label xml:lang="pt">PizzaDeCarne</rdfs:label>
+    <rdfs:comment xml:lang="en">Any pizza that has at least one meat topping</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="#OliveTopping">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:disjointWith rdf:resource="#GarlicTopping"/>
+    <owl:disjointWith rdf:resource="#AsparagusTopping"/>
+    <owl:disjointWith rdf:resource="#OnionTopping"/>
+    <owl:disjointWith rdf:resource="#PepperTopping"/>
+    <owl:disjointWith rdf:resource="#SpinachTopping"/>
+    <owl:disjointWith rdf:resource="#RocketTopping"/>
+    <owl:disjointWith rdf:resource="#LeekTopping"/>
+    <owl:disjointWith rdf:resource="#PetitPoisTopping"/>
+    <owl:disjointWith rdf:resource="#CaperTopping"/>
+    <rdfs:label xml:lang="pt">CoberturaDeAzeitona</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#VegetableTopping"/>
+    <owl:disjointWith rdf:resource="#ArtichokeTopping"/>
+    <rdfs:subClassOf rdf:nodeID="A142"/>
+    <owl:disjointWith rdf:resource="#TomatoTopping"/>
+    <owl:disjointWith rdf:resource="#MushroomTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#Mushroom">
+    <rdfs:subClassOf rdf:nodeID="A389"/>
+    <owl:disjointWith rdf:resource="#Veneziana"/>
+    <rdfs:subClassOf rdf:nodeID="A202"/>
+    <owl:disjointWith rdf:resource="#AmericanHot"/>
+    <rdfs:label xml:lang="pt">Cogumelo</rdfs:label>
+    <owl:disjointWith rdf:resource="#QuattroFormaggi"/>
+    <owl:disjointWith rdf:resource="#Cajun"/>
+    <owl:disjointWith rdf:resource="#UnclosedPizza"/>
+    <owl:disjointWith rdf:resource="#American"/>
+    <rdfs:subClassOf rdf:nodeID="A232"/>
+    <rdfs:subClassOf rdf:resource="#NamedPizza"/>
+    <owl:disjointWith rdf:resource="#Siciliana"/>
+    <owl:disjointWith rdf:resource="#SloppyGiuseppe"/>
+    <rdfs:subClassOf rdf:nodeID="A304"/>
+    <owl:disjointWith rdf:resource="#PrinceCarlo"/>
+    <owl:disjointWith rdf:resource="#Giardiniera"/>
+    <owl:disjointWith rdf:resource="#Soho"/>
+    <owl:disjointWith rdf:resource="#Caprina"/>
+    <owl:disjointWith rdf:resource="#Rosa"/>
+    <owl:disjointWith rdf:resource="#FourSeasons"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:disjointWith rdf:resource="#Capricciosa"/>
+    <owl:disjointWith rdf:resource="#PolloAdAstra"/>
+    <owl:disjointWith rdf:resource="#Margherita"/>
+    <owl:disjointWith rdf:resource="#Fiorentina"/>
+    <owl:disjointWith rdf:resource="#LaReine"/>
+    <owl:disjointWith rdf:resource="#Napoletana"/>
+    <owl:disjointWith rdf:resource="#FruttiDiMare"/>
+    <owl:disjointWith rdf:resource="#Parmense"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#SpicyPizzaEquivalent">
+    <owl:equivalentClass rdf:nodeID="A387"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment xml:lang="en">An alternative definition for the SpicyPizza which does away with needing a definition of SpicyTopping and uses a slightly more complicated restriction: Pizzas that have at least one topping that is both a PizzaTopping and has spiciness hot are members of this class. </rdfs:comment>
+    <rdfs:label xml:lang="pt">PizzaTemperadaEquivalente</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A353">
+    <owl:onProperty rdf:resource="#hasTopping"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="#MushroomTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A185">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="#hasTopping"/>
+    <owl:someValuesFrom rdf:resource="#SpicyTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A149">
+    <rdf:rest rdf:nodeID="A85"/>
+    <rdf:first rdf:resource="#ParmesanTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A281">
+    <owl:allValuesFrom rdf:resource="#ThinAndCrispyBase"/>
+    <owl:onProperty rdf:resource="#hasBase"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A391">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="#hasTopping"/>
+    <owl:someValuesFrom rdf:resource="#GarlicTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A193">
+    <rdf:rest rdf:nodeID="A367"/>
+    <rdf:first rdf:nodeID="A302"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A279">
+    <owl:someValuesFrom rdf:resource="#AnchoviesTopping"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="#hasTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A370">
+    <rdf:rest rdf:nodeID="A322"/>
+    <rdf:first rdf:resource="#MozzarellaTopping"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#RocketTopping">
+    <owl:disjointWith rdf:resource="#CaperTopping"/>
+    <owl:disjointWith rdf:resource="#AsparagusTopping"/>
+    <owl:disjointWith rdf:resource="#OliveTopping"/>
+    <owl:disjointWith rdf:resource="#SpinachTopping"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:nodeID="A307"/>
+    <owl:disjointWith rdf:resource="#OnionTopping"/>
+    <rdfs:subClassOf rdf:resource="#VegetableTopping"/>
+    <owl:disjointWith rdf:resource="#MushroomTopping"/>
+    <owl:disjointWith rdf:resource="#PepperTopping"/>
+    <owl:disjointWith rdf:resource="#PetitPoisTopping"/>
+    <owl:disjointWith rdf:resource="#TomatoTopping"/>
+    <owl:disjointWith rdf:resource="#GarlicTopping"/>
+    <owl:disjointWith rdf:resource="#ArtichokeTopping"/>
+    <owl:disjointWith rdf:resource="#LeekTopping"/>
+    <rdfs:label xml:lang="pt">CoberturaRocket</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A274">
+    <owl:onProperty rdf:resource="#hasTopping"/>
+    <owl:allValuesFrom rdf:nodeID="A277"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+</rdf:RDF>
+
+<!-- Created with Protege (with OWL Plugin 3.4, Build 533)  http://protege.stanford.edu -->
