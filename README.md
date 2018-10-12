@@ -21,13 +21,12 @@ Para el correcto funcionamiento, los requisitos necesarios previos a la ejecuci�
 - Subir el archivo .owl correspondiente al modelo ontológico, éste se puede encontrar en la carpeta "OWL".
 
 
+//
 
--
--
--
--
--
--
+
+//
+
+//
 
 
 -->Las descargas correspondientes a Apache Jena y Apache Jena Fuseki pueden ser descargados desde su página oficial:
