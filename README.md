@@ -18,7 +18,7 @@ Para el correcto funcionamiento, los requisitos necesarios previos a la ejecuci�
   
   *Se recomienda desde linux hacer un demonio para el lanzamiento de éste.
   
--Subir el archivo .owl correspondiente al modelo ontológico, éste se puede encontrar en la carpeta "OWL".
+- Subir el archivo .owl correspondiente al modelo ontológico, éste se puede encontrar en la carpeta "OWL".
 
 
 
