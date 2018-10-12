@@ -17,10 +17,17 @@ Para el correcto funcionamiento, los requisitos necesarios previos a la ejecuci�
     java -Xmx1024M -jar fuseki-server.jar --update --loc=Data /myData
   
   *Se recomienda desde linux hacer un demonio para el lanzamiento de éste.
+  
 -Subir el archivo .owl correspondiente al modelo ontológico, éste se puede encontrar en la carpeta "OWL".
 
 
 
+-
+-
+-
+-
+-
+-
 
 
 -->Las descargas correspondientes a Apache Jena y Apache Jena Fuseki pueden ser descargados desde su página oficial:
